@@ -433,3 +433,23 @@ INFO  2017-09-14 11:56:04,701 [10   ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2017-09-14 11:56:04,702 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/materialize/fonts/roboto/Roboto-Light.woff2'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\materialize\fonts\roboto\Roboto-Light.woff2'
 INFO  2017-09-14 11:56:04,707 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.1814ms 200 application/javascript
 INFO  2017-09-14 11:56:04,714 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.3574ms 200 font/woff2
+INFO  2017-09-14 12:41:08,158 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-09-14 12:41:08,170 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-09-14 12:41:08,374 [24   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-09-14 12:41:08,386 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 218.4775ms
+INFO  2017-09-14 12:41:08,387 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 228.8771ms 200 text/html; charset=utf-8
+INFO  2017-09-14 12:41:08,400 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/jquery/dist/jquery.js  
+INFO  2017-09-14 12:41:08,406 [45   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery/dist/jquery.js was not modified
+INFO  2017-09-14 12:41:08,407 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.8832ms 304 application/javascript
+INFO  2017-09-14 12:41:08,408 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/js.jpg  
+INFO  2017-09-14 12:41:08,409 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/js.jpg'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\js.jpg'
+INFO  2017-09-14 12:41:08,409 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/user.png  
+INFO  2017-09-14 12:41:08,410 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3866ms 404 
+INFO  2017-09-14 12:41:08,424 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.8783ms 200 image/jpeg
+INFO  2017-09-14 12:41:29,871 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-09-14 12:41:29,878 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-09-14 12:41:29,887 [3    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-09-14 12:41:30,048 [3    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 170.2093ms
+INFO  2017-09-14 12:41:30,048 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 176.6646ms 200 text/html; charset=utf-8
+INFO  2017-09-14 12:41:30,061 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/user.png  
+INFO  2017-09-14 12:41:30,063 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5706ms 404 
