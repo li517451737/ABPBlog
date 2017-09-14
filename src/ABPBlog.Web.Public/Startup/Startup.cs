@@ -22,7 +22,7 @@ namespace ABPBlog.Web.Public.Startup
 
         public Startup(IHostingEnvironment env)
         {
-            Configuration = env.GetAppConfiguration();
+            _appConfiguration = env.GetAppConfiguration();
         }
 
         public IConfiguration Configuration { get; }
@@ -55,11 +55,8 @@ namespace ABPBlog.Web.Public.Startup
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            app.UseStaticFiles();
             app.UseAuthentication();
-            app.UseJwtTokenMiddleware();
-
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

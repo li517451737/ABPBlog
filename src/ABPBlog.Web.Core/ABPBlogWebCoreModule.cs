@@ -52,7 +52,10 @@ namespace ABPBlog
                      typeof(ABPBlogApplicationModule).GetAssembly()
                  );
 
-            ConfigureTokenAuth();
+            if (_appConfiguration["Authentication:JwtBearer:IsEnabled"] != null && bool.Parse(_appConfiguration["Authentication:JwtBearer:IsEnabled"]))
+            {
+                ConfigureTokenAuth(); 
+            }
         }
 
         private void ConfigureTokenAuth()
