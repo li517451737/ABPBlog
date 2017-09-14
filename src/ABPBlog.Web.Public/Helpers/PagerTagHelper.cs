@@ -11,7 +11,6 @@ namespace ABPBlog.Web.Public.Helpers
     {
         public MoPagerOption PagerOption { get; set; }
 
-
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "div";
@@ -48,9 +47,10 @@ namespace ABPBlog.Web.Public.Helpers
                     {
                         #region 默认样式
 
-                        sbPage.Append("<nav>");
+                        sbPage.Append("<div clas=\"page\">");
                         sbPage.Append("  <ul class=\"pagination\">");
-                        sbPage.AppendFormat("       <li><a href=\"{0}/{1}\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li>",
+                        sbPage.AppendFormat("<li {0}><a href=\"{1}/{2}\"><i <i class=\"fa fa-chevron-left\"></i></a></li>",
+                                                PagerOption.CurrentPage <=1 ? "class=\"disabled\"":"",
                                                 PagerOption.RouteUrl,
                                                 PagerOption.CurrentPage - 1 <= 0 ? 1 : PagerOption.CurrentPage - 1);
 
@@ -59,20 +59,20 @@ namespace ABPBlog.Web.Public.Helpers
 
                             sbPage.AppendFormat("       <li {1}><a href=\"{2}/{0}\">{0}</a></li>",
                                 i,
-                                i == PagerOption.CurrentPage ? "class=\"active\"" : "",
+                                i == PagerOption.CurrentPage ? "class=\"active\"" : "class=\"waves-effect\"",
                                 PagerOption.RouteUrl);
 
                         }
 
-                        sbPage.Append("       <li>");
-                        sbPage.AppendFormat("         <a href=\"{0}/{1}\" aria-label=\"Next\">",
+                        sbPage.Append("       <li class=\"waves-effect\">");
+                        sbPage.AppendFormat("         <a href=\"{0}/{1}\">",
                                             PagerOption.RouteUrl,
                                             PagerOption.CurrentPage + 1 > totalPage ? PagerOption.CurrentPage : PagerOption.CurrentPage + 1);
-                        sbPage.Append("               <span aria-hidden=\"true\">&raquo;</span>");
+                        sbPage.Append("               <i class=\"fa fa-chevron-right\"></i>");
                         sbPage.Append("         </a>");
                         sbPage.Append("       </li>");
                         sbPage.Append("   </ul>");
-                        sbPage.Append("</nav>");
+                        sbPage.Append("</div>");
                         #endregion
                     }
                     break;

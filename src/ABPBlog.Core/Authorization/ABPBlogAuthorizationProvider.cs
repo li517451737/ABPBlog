@@ -8,8 +8,11 @@ namespace ABPBlog.Authorization
     {
         public override void SetPermissions(IPermissionDefinitionContext context)
         {
+            context.CreatePermission(PermissionNames.Pages_Users, L("Pages"));
             context.CreatePermission(PermissionNames.Pages_Users, L("Users"));
             context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
+            context.CreatePermission(PermissionNames.ABPBlog_Pages_Articles, L("ABPBlog_Pages_Articles"));
+            context.CreatePermission(PermissionNames.ABPBlog_Pages_ArticlesClassify, L("ABPBlog_Pages_ArticlesClassify"));
             context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
         }
 

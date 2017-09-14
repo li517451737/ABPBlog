@@ -18,8 +18,12 @@
     <text name="Password" value="密码" />
     <text name="RememberMe" value="记住我" />
     <text name="LogIn" value="登录" />
-
     <text name="LoginFailed" value="登录失败!" />
-    
+
+
+    <text name="ABPBlog_Pages_ArticlesManager" value="文章管理"></text>
+    <text name="ABPBlog_Pages_Articles" value="文章列表"></text>
+    <text name="ABPBlog_Pages_ArticlesClassify" value="文章分类"></text>
+
   </texts>
 </localizationDictionary>

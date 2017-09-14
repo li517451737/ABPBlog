@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ABPBlog.Articles
 {
-    public class ArticleInfo : Entity<int>, IHasCreationTime
+    public class ArticleInfo : FullAuditedEntity<int>
     {
         /// <summary>
         /// 标题
@@ -50,9 +50,5 @@ namespace ABPBlog.Articles
         /// 更新日期
         /// </summary>
         public DateTime? UpdateTime { get; set; }
-        /// <summary>
-        /// 创建日期
-        /// </summary>
-        public DateTime CreationTime { get; set; }
     }
 }
