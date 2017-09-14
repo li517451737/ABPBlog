@@ -6,27 +6,46 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Abp.AspNetCore;
+using ABPBlog.Configuration;
+using Microsoft.AspNetCore.Mvc;
+using ABPBlog.Identity;
+using Castle.Facilities.Logging;
+using Abp.Castle.Logging.Log4Net;
+using ABPBlog.Authentication.JwtBearer;
 
-namespace ABPBlog.Web.Public
+namespace ABPBlog.Web.Public.Startup
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IConfigurationRoot _appConfiguration;
+
+        public Startup(IHostingEnvironment env)
         {
-            Configuration = configuration;
+            Configuration = env.GetAppConfiguration();
         }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
+            IdentityRegistrar.Register(services);
+            return services.AddAbp<ABPBlogPublicWebModule>(options =>
+            {
+            options.IocManager.IocContainer.AddFacility<LoggingFacility>(
+                f => f.UseAbpLog4Net().WithConfig("log4net.config"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseAbp();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -38,6 +57,8 @@ namespace ABPBlog.Web.Public
             }
 
             app.UseStaticFiles();
+            app.UseAuthentication();
+            app.UseJwtTokenMiddleware();
 
             app.UseMvc(routes =>
             {
