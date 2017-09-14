@@ -15,9 +15,10 @@ using System;
 namespace ABPBlog.Migrations
 {
     [DbContext(typeof(ABPBlogDbContext))]
-    partial class ABPBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170914114236_AddArticles")]
+    partial class AddArticles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -762,8 +763,6 @@ namespace ABPBlog.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("ClassifyId");
-
                     b.Property<string>("Content");
 
                     b.Property<string>("CoverImg")
@@ -800,8 +799,6 @@ namespace ABPBlog.Migrations
                     b.Property<DateTime?>("UpdateTime");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ClassifyId");
 
                     b.ToTable("ArticleInfoes");
                 });
@@ -1111,14 +1108,6 @@ namespace ABPBlog.Migrations
                     b.HasOne("Abp.Organizations.OrganizationUnit", "Parent")
                         .WithMany("Children")
                         .HasForeignKey("ParentId");
-                });
-
-            modelBuilder.Entity("ABPBlog.Articles.ArticleInfo", b =>
-                {
-                    b.HasOne("ABPBlog.Articles.ArticleClassify", "ArticleClassify")
-                        .WithMany("ArticleInfoes")
-                        .HasForeignKey("ClassifyId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("ABPBlog.Authorization.Roles.Role", b =>

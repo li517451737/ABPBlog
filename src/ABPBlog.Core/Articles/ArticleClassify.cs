@@ -18,5 +18,10 @@ namespace ABPBlog.Articles
         /// 排序
         /// </summary>
         public int Sort { get; set; }
+
+        /// <summary>
+        /// 文章导航
+        /// </summary>
+        public virtual ICollection<ArticleInfo> ArticleInfoes { get; set; }
     }
 }

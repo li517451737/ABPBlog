@@ -7,5 +7,8 @@
         public const string Tenants = "Tenants";
         public const string Users = "Users";
         public const string Roles = "Roles"; 
+        public const string Articles = "Articles";
+        public const string ArticleInfoes = "ArticleInfoes";
+        public const string ArticleClassify = "ArticleClassify";
     }
 }

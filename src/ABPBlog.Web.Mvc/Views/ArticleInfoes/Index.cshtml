@@ -1,0 +1,44 @@
+﻿@using ABPBlog.Web.Startup
+@{
+    ViewBag.CurrentPageName = PageNames.Articles;
+}
+@section scripts
+{
+    <environment names="Development">
+        <script src="~/view-resources/Views/Articles/ArticleInfo.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/Articles/ArticleInfo.min.js" asp-append-version="true"></script>
+    </environment>
+}
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    @L("ArticleList")
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>Refresh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="toolBar">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ArticleCreateModal">
+                        <i class="material-icons">add</i>@L("Add")
+                    </button>
+                </div>
+            </div>
+            <div class="body table-responsive">
+                <table id="articleTable" class="table table-bordered table-striped table-hover"></table>
+            </div>
+        </div>
+    </div>
+</div>

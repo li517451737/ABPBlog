@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpOverrides;
 
 #if FEATURE_SIGNALR
 using Owin;
@@ -69,7 +70,10 @@ namespace ABPBlog.Web.Startup
             }
 
             app.UseStaticFiles();
-
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
             app.UseAuthentication();
             app.UseJwtTokenMiddleware();
 
