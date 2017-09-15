@@ -2,34 +2,37 @@
 @model ABPBlog.Web.Models.Articles.CreateOrEditArticleInfoViewModel
 @{
     ViewBag.CurrentPageName = PageNames.Articles;
-    string title =(Model.IsEdit ? L("EditArticleInfo") : L("CreateArticleInfo"));
+    string title =(Model.IsEdit ? L("ABPBlog_Pages_Articles_Edit") : L("ABPBlog_Pages_Articles_Create"));
 }
-@section scripts
-    {
-    <environment names="Development">
-        <script src="~/lib/ckeditor/ckeditor.js" asp-append-version="true"></script>
-        <script src="~/lib/ckeditor/styles.js" asp-append-version="true"></script>
-        <script src="~/view-resources/Views/Articles/createOrEditArticleInfo.js" asp-append-version="true"></script>
-    </environment>
-    <environment names="Staging,Production">
-        <script src="~/view-resources/Views/Articles/createOrEditArticleInfo.min.js" asp-append-version="true"></script>
-    </environment>
+@section styles{ 
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/lib/blueimp-file-upload/css/jquery.fileupload.css" asp-append-version="true" />
+</environment>
+<environment names="Staging,Production">
+    <link rel="stylesheet" href="~/lib/blueimp-file-upload/css/jquery.fileupload.min.css" asp-append-version="true" />
+</environment>
 }
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="row clearfix">
         <ol class="breadcrumb">
-            <li><a href="/">@L("Home")</a></li>
-            <li><a asp-action="Index">@L("ArticleList")</a></li>
+            <li><a href="/">@L("HomePage")</a></li>
+            <li><a asp-action="Index">@L("ABPBlog_Pages_Articles")</a></li>
             <li class="active">@title</li>
         </ol>
     </div>
     <div class="card" style="padding:12px">
         <form id="createOrEditArticleForm" class="form-validation">
+            @if (Model.IsEdit)
+            {
+                <input type="hidden" name="Id" value="@Model.Id.Value" />
+            }
             <div class="row clearfix" style="margin-top:10px;">
                 <div class="col-sm-12">
                     <div class="form-group form-float">
                         <div class="form-line">
-                            <input id="rolename" type="text" name="Name" value="" required maxlength="32" minlength="2" class="validate form-control">
+                            <input id="Title" class="validate form-control@(string.IsNullOrEmpty(Model.Title)?"":" edit")" type="text" name="Title" value="@Model?.Title" required maxlength="32" minlength="2">
                             <label for="rolename" class="form-label">@L("Title")</label>
                         </div>
                     </div>
@@ -38,9 +41,31 @@
             <div class="row clearfix">
                 <div class="col-sm-12">
                     <div class="form-group form-float">
+                        <span class="btn btn-success fileinput-button">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            <span>选择封面.
+                            </span>
+                            <!-- The file input field used as target for the file upload widget -->
+                            <input id="fileupload" type="file" name="files">
+                            <input type="hidden" id="CoverImg" name="CoverImg" value="@Model?.CoverImg" />
+                        </span>
+                        <!-- The global progress bar -->
+                        <div id="progress" class="progress">
+                            <div class="progress-bar progress-bar-success"></div>
+                        </div>
+                        @*<div class="form-line">
+                            <input type="file" name="imageFile" class="form-control" />
+                            <label for="Intro" class="form-label">文章封面</label>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-group form-float">
                         <div class="form-line">
-                            <textarea id="displayname" type="text" name="DisplayName" value="" required maxlength="32" minlength="2" class="validate form-control"></textarea>
-                            <label for="displayname" class="form-label">@L("Intro")</label>
+                            <textarea class="validate form-control@(string.IsNullOrEmpty(Model.Intro)?"":" edit")" id="Intro" type="text" name="Intro" value="@Model?.Intro" required maxlength="200"></textarea>
+                            <label for="Intro" class="form-label">@L("Intro")</label>
                         </div>
                     </div>
                 </div>
@@ -50,11 +75,58 @@
                     <div class="form-group form-float">
                         <label for="Content" class="form-label">@L("Content")</label>
                         <div class="form-line">
-                            <textarea id="Content" type="text" name="Content" value="" required class="ckeditor"></textarea>
+                            <textarea id="Content" type="text" name="Content" class="ckeditor"></textarea>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input id="SourceUrl" type="text" name="SourceUrl" value="@Model?.SourceUrl" class="form-control" />
+                            <label for="SourceUrl" class="form-label">@L("SourceUrl")</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input id="Memo" type="text" name="Memo" value="@Model?.Memo" class="form-control" />
+                            <label for="Memo" class="form-label">@L("Memo")</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-group text-center">
+                        <a class="btn btn-warning" asp-action="Index"><i class="material-icons">reply</i>@L("Return")</a>
+                        <button type="button" id="SaveArticle" class="btn blue btn-success"><i class="material-icons">save</i><span>@L("Save")</span></button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
 </div>
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js" asp-append-version="true"></script>
+        <script src="~/lib/blueimp-file-upload/js/jquery.iframe-transport.js" asp-append-version="true"></script>
+        <script src="~/lib/blueimp-file-upload/js/jquery.fileupload.js" asp-append-version="true"></script>
+        <script src="~/lib/ckeditor/ckeditor.js" asp-append-version="true"></script>
+        <script src="~/lib/ckeditor/styles.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Articles/createOrEditArticleInfo.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js" asp-append-version="true"></script>
+        <script src="~/lib/blueimp-file-upload/js/jquery.iframe-transport.js" asp-append-version="true"></script>
+        <script src="~/lib/blueimp-file-upload/js/jquery.fileupload.js" asp-append-version="true"></script>
+        <script src="~/lib/ckeditor/ckeditor.js" asp-append-version="true"></script>
+        <script src="~/lib/ckeditor/styles.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Articles/createOrEditArticleInfo.min.js" asp-append-version="true"></script>
+    </environment>
+}

@@ -47,14 +47,14 @@ namespace ABPBlog.Web.Startup
                 ).AddItem(
                     new MenuItemDefinition(
                         PageNames.Articles,
-                        L("Articles"),
+                        L("ABPBlog_Pages_ArticlesManager"),
                         url: "",
                         icon: "home",
                         requiredPermissionName: PermissionNames.ABPBlog_Pages_Articles
                         ).AddItem(
                             new MenuItemDefinition(
                                 PageNames.ArticleInfoes,
-                                L("ArticleInfoes"),
+                                L("ABPBlog_Pages_Articles"),
                                 url: "ArticleInfoes",
                                 icon: "local_offer",
                                 requiredPermissionName: PermissionNames.ABPBlog_Pages_Articles
@@ -62,7 +62,7 @@ namespace ABPBlog.Web.Startup
                         ).AddItem(
                             new MenuItemDefinition(
                                 PageNames.ArticleClassify,
-                                L("ArticleClassify"),
+                                L("ABPBlog_Pages_ArticlesClassify"),
                                 url: "ArticleClassify",
                                 icon: "local_offer",
                                 requiredPermissionName: PermissionNames.ABPBlog_Pages_ArticlesClassify

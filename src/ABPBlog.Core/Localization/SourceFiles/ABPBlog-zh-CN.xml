@@ -4,7 +4,10 @@
     <text name="HomePage" value="主页" />
     <text name="About" value="关于我们" />
     <text name="WellcomeMessage" value="欢迎使用 ABPBlog!" />
-    
+    <text name="Save">保存</text>
+    <text name="Return">返回</text>
+    <text name="Roles">角色列表</text>
+    <text name="Users">用户列表</text>
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
 
@@ -23,10 +26,15 @@
     <text name="Intro" value="简介" />
     <text name="Description" value="详情" />
     <text name="Content" value="内容" />
+    <text name="SourceUrl" value="来源地址" />
+    <text name="Memo" value="备注" />
 
 
     <text name="ABPBlog_Pages_ArticlesManager" value="文章管理"></text>
     <text name="ABPBlog_Pages_Articles" value="文章列表"></text>
+    <text name="ABPBlog_Pages_Articles_Create" value="添加文章"></text>
+    <text name="ABPBlog_Pages_Articles_Edit" value="编辑文章"></text>
+    <text name="ABPBlog_Pages_Articles_Delete" value="删除文章"></text>
     <text name="ABPBlog_Pages_ArticlesClassify" value="文章分类"></text>
 
   </texts>

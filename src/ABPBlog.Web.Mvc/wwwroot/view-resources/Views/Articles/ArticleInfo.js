@@ -37,6 +37,7 @@
             detailView: false,
             columns: [
                 {
+                    field:"Id",
                     checkbox: true
                 },
                 {

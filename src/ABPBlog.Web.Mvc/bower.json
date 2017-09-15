@@ -28,6 +28,10 @@
     "Flot": "jquery-flot#^0.8.3",
     "abp-web-resources": "^2.2.1",
     "bootstrap-table": "1.11.1",
-    "ckeditor": "#standard/4.7.3"
+    "ckeditor": "#standard/4.7.3",
+    "blueimp-file-upload": "jquery-file-upload#v9.19.1"
+  },
+  "resolutions": {
+    "blueimp-file-upload": "v9.19.1"
   }
 }

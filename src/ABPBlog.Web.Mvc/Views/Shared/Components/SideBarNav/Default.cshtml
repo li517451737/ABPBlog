@@ -1,4 +1,5 @@
-﻿@using Abp.Collections.Extensions
+﻿<!--
+@*@using Abp.Collections.Extensions
 @using ABPBlog.Web.Views
 @using ABPBlog.Web.Views.Shared.Components.SideBarNav
 @model SideBarNavViewModel
@@ -83,4 +84,32 @@
             </li>
         }
     </ul>
+</div>*@
+    -->
+@using ABPBlog.Web.Views.Shared.Components.SideBarNav
+@model SideBarNavViewModel
+@{
+
+}
+<div class="menu">
+    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <ul class="list">
+        @for (var i = 0; i < Model.MainMenu.Items.Count; i++)
+        {
+            var menuItem = Model.MainMenu.Items[i];
+            @Html.Partial("Components/SideBarNav/_UserMenuItem", new UserMenuItemViewModel
+       {
+           MenuItem = menuItem,
+           MenuItemIndex = i,
+           RootLevel = true,
+           CurrentPageName = Model.ActiveMenuItemName
+       })
+        }
+    </ul>
 </div>
+	
