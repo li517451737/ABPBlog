@@ -45,7 +45,7 @@ namespace ABPBlog.Articles
         
         public async Task<ListResultDto<GetAllArticleInfoDto>> GetAllArticles(GetArticleInfoDto input)
         {
-            var queryable = _repository.GetAll();
+            var queryable = _repository.GetAll().Include(i=>i.ArticleClassify);
             if (input != null)
             {
                 queryable.WhereIf(input.ClassifyId.HasValue, i => i.ClassifyId == input.ClassifyId.Value)
@@ -61,9 +61,15 @@ namespace ABPBlog.Articles
             return await _repository.CountAsync();
         }
 
-        public Task<CreateOrEditArticleInfoDto> GetArticleInfoForEdit(NullableIdDto input)
+        public async Task<CreateOrEditArticleInfoDto> GetArticleInfoForEdit(NullableIdDto input)
         {
-            throw new NotImplementedException();
+            CreateOrEditArticleInfoDto articleInfo = new CreateOrEditArticleInfoDto();
+            if (input.Id.HasValue)
+            {
+                var info = await _repository.FirstOrDefaultAsync(input.Id.Value);
+                ObjectMapper.Map(info, articleInfo);
+            }
+            return articleInfo;
         }
         protected virtual async Task UpdateArticleInfo(CreateOrEditArticleInfoDto input)
         {

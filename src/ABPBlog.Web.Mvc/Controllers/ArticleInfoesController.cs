@@ -9,6 +9,8 @@ using Abp.AspNetCore.Mvc.Authorization;
 using ABPBlog.Authorization;
 using Abp.Web.Models;
 using ABPBlog.Articles.Dto;
+using Abp.Application.Services.Dto;
+using ABPBlog.Web.Models.Articles;
 
 namespace ABPBlog.Web.Mvc.Controllers
 {
@@ -25,6 +27,15 @@ namespace ABPBlog.Web.Mvc.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public async Task<IActionResult> CreateOrEdit(int? id)
+        {
+            var model = await _articleService.GetArticleInfoForEdit(new NullableIdDto(id));
+            CreateOrEditArticleInfoViewModel viewModel = new CreateOrEditArticleInfoViewModel();
+            if (model != null && model.Id.HasValue)
+                ObjectMapper.Map(model, viewModel);
+            return View(viewModel);
         }
         /// <summary>
         /// 分页查询文章信息

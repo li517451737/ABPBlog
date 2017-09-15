@@ -46,5 +46,10 @@ namespace ABPBlog.Articles.Dto
         /// 创建日期
         /// </summary>
         public DateTime CreationTime { get; set; }
+
+        /// <summary>
+        /// 分类信息
+        /// </summary>
+        public ArticleClassify ArticleClassify { get; set; }
     }
 }

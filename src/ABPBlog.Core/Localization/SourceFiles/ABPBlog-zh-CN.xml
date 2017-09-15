@@ -19,6 +19,10 @@
     <text name="RememberMe" value="记住我" />
     <text name="LogIn" value="登录" />
     <text name="LoginFailed" value="登录失败!" />
+    <text name="Title" value="标题" />
+    <text name="Intro" value="简介" />
+    <text name="Description" value="详情" />
+    <text name="Content" value="内容" />
 
 
     <text name="ABPBlog_Pages_ArticlesManager" value="文章管理"></text>
