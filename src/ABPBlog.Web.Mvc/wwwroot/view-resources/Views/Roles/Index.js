@@ -40,7 +40,6 @@
 			if (!_$form.valid()) {
 				return;
 			}
-
 			var role = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js
 			role.permissions = [];
 			var _$permissionCheckboxes = $("input[name='permission']:checked");

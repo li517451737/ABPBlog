@@ -26,7 +26,14 @@ namespace ABPBlog.Web.Mvc.Controllers
         {
             return View();
         }
-
+        /// <summary>
+        /// 分页查询文章信息
+        /// </summary>
+        /// <param name="keyword"></param>
+        /// <param name="classifyId"></param>
+        /// <param name="limit"></param>
+        /// <param name="offset"></param>
+        /// <returns></returns>
         [HttpGet]
         [DontWrapResult]
         public async Task<JsonResult> GetArticleInfoes(string keyword, int? classifyId, int limit = 10, int offset = 0)
