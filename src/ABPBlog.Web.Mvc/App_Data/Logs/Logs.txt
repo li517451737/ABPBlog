@@ -9200,3 +9200,440 @@ System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Docu
 INFO  2017-09-15 22:40:57,680 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
 INFO  2017-09-15 22:40:57,689 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 123.3789ms
 INFO  2017-09-15 22:40:57,692 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 138.1172ms 500 application/json; charset=utf-8
+DEBUG 2017-09-15 22:55:54,950 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-09-15 22:55:55,121 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-09-15 22:55:55,132 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.Web.Startup.ABPBlogWebMvcModule, ABPBlog.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,135 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogWebCoreModule, ABPBlog.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,135 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogApplicationModule, ABPBlog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,135 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogCoreModule, ABPBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,135 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,136 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,136 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,136 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,137 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.EntityFrameworkCore.ABPBlogEntityFrameworkModule, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,137 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,137 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,137 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,137 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,138 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:55,140 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-09-15 22:55:55,257 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 22:55:55,257 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 22:55:55,257 [2    ] o.Configuration.LanguageManagementConfig - Converted ABPBlog (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 22:55:55,257 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 22:55:55,695 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ABPBlog.EntityFrameworkCore.ABPBlogDbContext, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 22:55:56,535 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-09-15 22:55:56,548 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-09-15 22:55:56,552 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-09-15 22:55:56,553 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: ABPBlog
+DEBUG 2017-09-15 22:55:56,554 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-09-15 22:55:56,714 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-09-15 22:55:56,759 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-09-15 22:55:56,759 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-09-15 22:55:56,762 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.CreateUserDto
+DEBUG 2017-09-15 22:55:56,762 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.UserDto
+DEBUG 2017-09-15 22:55:56,762 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-09-15 22:55:56,762 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.CreateRoleDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.PermissionDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.RoleDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.TenantDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleInfoDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.GetAllArticleInfoDto
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2017-09-15 22:55:56,763 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Web.Models.Articles.CreateOrEditArticleInfoViewModel
+INFO  2017-09-15 22:55:59,514 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2017-09-15 22:56:01,665 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:02,033 [5    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 22:56:02,123 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Controllers.HomeController.Index (ABPBlog.Web.Mvc) with arguments ((null)) - ModelState is Valid
+INFO  2017-09-15 22:56:05,103 [5    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-09-15 22:56:09,356 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Controllers.HomeController.Index (ABPBlog.Web.Mvc) in 7353.5123ms
+INFO  2017-09-15 22:56:09,374 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9877.3212ms 200 text/html; charset=utf-8
+INFO  2017-09-15 22:56:09,406 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=GSvic5HIlkgjdmRalpNdORuHsocwno66_BfwgkNyxCg  
+INFO  2017-09-15 22:56:09,420 [17   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/style.css was not modified
+INFO  2017-09-15 22:56:09,430 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.1136ms 304 text/css
+INFO  2017-09-15 22:56:09,543 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 22:56:09,571 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:09,612 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 22:56:09,643 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:09,710 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:56:09,789 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 22:56:10,060 [6    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:56:10,066 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 402.2506ms
+INFO  2017-09-15 22:56:10,071 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 477.7098ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:56:10,114 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 22:56:10,118 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 454.904ms
+INFO  2017-09-15 22:56:10,122 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 579.3711ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 22:56:13,522 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes  
+INFO  2017-09-15 22:56:13,532 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:13,541 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 22:56:13,780 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.Index (ABPBlog.Web.Mvc) with arguments ((null)) - ModelState is Valid
+INFO  2017-09-15 22:56:13,980 [10   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/Index.cshtml.
+INFO  2017-09-15 22:56:14,138 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.Index (ABPBlog.Web.Mvc) in 590.5991ms
+INFO  2017-09-15 22:56:14,174 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 639.6992ms 200 text/html; charset=utf-8
+INFO  2017-09-15 22:56:14,185 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 22:56:14,193 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:14,235 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 22:56:14,240 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 22:56:14,246 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 46.4866ms
+INFO  2017-09-15 22:56:14,286 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.2972ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 22:56:14,287 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 22:56:14,295 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/ArticleInfo.js?v=nkVcN0BU8M1G5LXlow-RvTGj_Q7brk3mQcXDiE7LUxo  
+INFO  2017-09-15 22:56:14,302 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Articles/ArticleInfo.js was not modified
+INFO  2017-09-15 22:56:14,332 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.6683ms 304 application/javascript
+INFO  2017-09-15 22:56:14,334 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:14,402 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:56:14,439 [5    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:56:14,446 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 100.4746ms
+INFO  2017-09-15 22:56:14,452 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 196.1126ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:56:14,502 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/GetArticleInfoes?limit=10&offset=0&_=1505487374337 application/json 
+INFO  2017-09-15 22:56:14,534 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:14,551 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 22:56:14,619 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.GetArticleInfoes (ABPBlog.Web.Mvc) with arguments (, , 10, 0) - ModelState is Valid
+INFO  2017-09-15 22:56:15,090 [6    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value { total = 0, rows = System.Collections.Generic.List`1[ABPBlog.Articles.Dto.GetAllArticleInfoDto] }.
+INFO  2017-09-15 22:56:15,110 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.GetArticleInfoes (ABPBlog.Web.Mvc) in 559.4319ms
+INFO  2017-09-15 22:56:15,119 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 614.2713ms 200 application/json; charset=utf-8
+INFO  2017-09-15 22:56:15,997 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 22:56:16,003 [11   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:16,011 [11   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 22:56:16,059 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:56:16,392 [10   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 22:56:16,857 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 843.608ms
+INFO  2017-09-15 22:56:16,889 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 864.0904ms 200 text/html; charset=utf-8
+INFO  2017-09-15 22:56:16,900 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/css/jquery.fileupload.css?v=2w6vtdNm9m9XUvYRBd_NthD3H31ilD5PiGxBv01jT1I  
+INFO  2017-09-15 22:56:16,926 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 22:56:16,927 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/css/jquery.fileupload.css was not modified
+INFO  2017-09-15 22:56:16,942 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 41.6933ms 304 text/css
+INFO  2017-09-15 22:56:16,979 [17   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:17,057 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 22:56:17,080 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/js/jquery.iframe-transport.js?v=ukF1SZuKuWxrOuHYsIWvveF8zXDPjGZczpiPwQYRTwU  
+INFO  2017-09-15 22:56:17,131 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 22:56:17,140 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:17,204 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/js/jquery.iframe-transport.js was not modified
+INFO  2017-09-15 22:56:17,217 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/js/jquery.fileupload.js?v=Y8J5vfzLXyVHQT8pQhbXMvDpJdt8LEDc2E2AGKa7FXg  
+INFO  2017-09-15 22:56:17,237 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=AsgLNQQiR7tY4KuZ38Tij2cxnu4zWCVr2ZG8Iy-Q3P8  
+INFO  2017-09-15 22:56:17,243 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Articles/createOrEditArticleInfo.js was not modified
+INFO  2017-09-15 22:56:17,259 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js?v=00MRscYhQWaTV0XNEoe6rerlo9KIjr0Tj0VIJEadrEQ  
+INFO  2017-09-15 22:56:17,272 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:56:17,273 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 163.5691ms 304 application/javascript
+INFO  2017-09-15 22:56:17,280 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 22:56:17,295 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/js/jquery.fileupload.js was not modified
+INFO  2017-09-15 22:56:17,315 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.1218ms 304 application/javascript
+INFO  2017-09-15 22:56:17,327 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 300.1998ms
+INFO  2017-09-15 22:56:17,336 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js was not modified
+INFO  2017-09-15 22:56:17,354 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 292.4893ms 304 application/javascript
+INFO  2017-09-15 22:56:17,369 [5    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:56:17,388 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 226.7761ms
+INFO  2017-09-15 22:56:17,398 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 410.79ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:56:17,408 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 258.7952ms 304 application/javascript
+INFO  2017-09-15 22:56:17,434 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 428.3795ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 22:56:26,594 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/FileUpload/UploadImageFile multipart/form-data; boundary=----WebKitFormBoundary7mo5dBe7vdYhbYID 102640
+INFO  2017-09-15 22:56:26,627 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:56:26,726 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:56:50,168 [11   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-09-15 22:56:50,179 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 23542.46ms
+INFO  2017-09-15 22:56:50,188 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23593.1884ms 200 application/json; charset=utf-8
+INFO  2017-09-15 22:58:01,733 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 22:58:01,743 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:58:01,752 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 22:58:01,793 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:58:01,884 [10   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 22:58:01,984 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 233.5277ms
+INFO  2017-09-15 22:58:02,024 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 256.0775ms 200 text/html; charset=utf-8
+INFO  2017-09-15 22:58:02,037 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 22:58:02,053 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:58:02,266 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 22:58:02,271 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 22:58:02,315 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 22:58:02,370 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 260.6415ms
+INFO  2017-09-15 22:58:02,397 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 346.4169ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 22:58:02,403 [29   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:58:02,412 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=k86IYdTAAFuO15D-TWZyzFsDAT3NOpd1UhtP7Z82yL8  
+INFO  2017-09-15 22:58:02,477 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:58:02,483 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Articles/createOrEditArticleInfo.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\view-resources\Views\Articles\createOrEditArticleInfo.js'
+INFO  2017-09-15 22:58:02,505 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 276.4295ms 200 application/javascript
+INFO  2017-09-15 22:58:02,517 [29   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:58:02,563 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 118.256ms
+INFO  2017-09-15 22:58:02,570 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 335.8012ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 22:58:05,142 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/FileUpload/UploadImageFile multipart/form-data; boundary=----WebKitFormBoundaryglMJ6eidae3uDigU 102640
+INFO  2017-09-15 22:58:05,154 [11   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 22:58:05,223 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 22:58:21,417 [29   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-09-15 22:58:21,422 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 16261.8929ms
+INFO  2017-09-15 22:58:21,428 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16285.4917ms 200 application/json; charset=utf-8
+INFO  2017-09-15 23:00:10,145 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 23:00:10,428 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:00:10,453 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 23:00:10,490 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:00:10,598 [10   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 23:00:10,700 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 264.5992ms
+INFO  2017-09-15 23:00:10,706 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 559.2366ms 200 text/html; charset=utf-8
+INFO  2017-09-15 23:00:10,772 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 23:00:10,815 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:00:10,817 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=f77GJTYP5AsaIGL39x404-epzfqwEb1h-MjlcW-fVus  
+INFO  2017-09-15 23:00:11,008 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Articles/createOrEditArticleInfo.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\view-resources\Views\Articles\createOrEditArticleInfo.js'
+INFO  2017-09-15 23:00:11,031 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 23:00:11,045 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 225.4695ms 200 application/javascript
+INFO  2017-09-15 23:00:11,047 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 23:00:11,057 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 228.7734ms
+INFO  2017-09-15 23:00:11,061 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 23:00:11,067 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 315.1301ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 23:00:11,078 [40   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:00:11,137 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:00:11,184 [40   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:00:11,213 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 105.3441ms
+INFO  2017-09-15 23:00:11,219 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 425.4296ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:00:18,012 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/FileUpload/UploadImageFile multipart/form-data; boundary=----WebKitFormBoundarypASJ9QQazNks8vLO 102640
+INFO  2017-09-15 23:00:18,020 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:00:18,057 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:00:20,023 [40   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-09-15 23:00:20,027 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 2001.7285ms
+INFO  2017-09-15 23:00:20,038 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2022.2969ms 200 application/json; charset=utf-8
+INFO  2017-09-15 23:01:26,793 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 23:01:26,801 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:01:26,812 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 23:01:26,847 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:01:26,934 [40   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 23:01:27,015 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 206.6976ms
+INFO  2017-09-15 23:01:27,021 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 226.5511ms 200 text/html; charset=utf-8
+INFO  2017-09-15 23:01:27,057 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 23:01:27,085 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:01:27,281 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 23:01:27,316 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/ckeditor.js?v=mpYA9UYzA3MfgX3GsuhUViXIEcN9JnNEStZJNZj7d5w  
+INFO  2017-09-15 23:01:27,337 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 23:01:27,389 [49   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=XkWVtAGs3EIWJDmitelV66OSb0_a5Mv-LqnwwC2AdrQ  
+INFO  2017-09-15 23:01:27,402 [49   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Articles/createOrEditArticleInfo.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\view-resources\Views\Articles\createOrEditArticleInfo.js'
+INFO  2017-09-15 23:01:27,405 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/styles.js?v=UKLywHWOJUlpY1L5vKxh5Nw3lpQLbkintyvJ8ixP7FY  
+INFO  2017-09-15 23:01:27,433 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 23:01:27,491 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 143.1077ms 200 application/javascript
+INFO  2017-09-15 23:01:27,535 [40   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/styles.js was not modified
+INFO  2017-09-15 23:01:27,556 [48   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:01:27,617 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/ckeditor.js was not modified
+INFO  2017-09-15 23:01:27,643 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 359.4693ms 304 application/javascript
+INFO  2017-09-15 23:01:27,647 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 271.9525ms 304 application/javascript
+INFO  2017-09-15 23:01:27,674 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 253.8475ms
+INFO  2017-09-15 23:01:27,675 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:01:27,684 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 629.2617ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 23:01:27,711 [48   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:01:27,726 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 152.5348ms
+INFO  2017-09-15 23:01:27,735 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 459.2307ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:01:27,860 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/config.js?t=H8DA  
+INFO  2017-09-15 23:01:27,864 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/config.js was not modified
+INFO  2017-09-15 23:01:27,878 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.8079ms 304 application/javascript
+INFO  2017-09-15 23:01:27,912 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/skins/moono-lisa/editor.css?t=H8DA  
+INFO  2017-09-15 23:01:27,913 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/lang/zh-cn.js?t=H8DA  
+INFO  2017-09-15 23:01:27,940 [40   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/skins/moono-lisa/editor.css was not modified
+INFO  2017-09-15 23:01:27,943 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/lang/zh-cn.js was not modified
+INFO  2017-09-15 23:01:28,039 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.2805ms 304 application/javascript
+INFO  2017-09-15 23:01:28,042 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/plugins/scayt/dialogs/dialog.css  
+INFO  2017-09-15 23:01:28,074 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 56.0301ms 304 text/css
+INFO  2017-09-15 23:01:28,127 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/plugins/tableselection/styles/tableselection.css  
+INFO  2017-09-15 23:01:28,176 [49   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css  
+INFO  2017-09-15 23:01:28,224 [48   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/plugins/scayt/dialogs/dialog.css was not modified
+INFO  2017-09-15 23:01:28,259 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/contents.css?t=H8DA  
+INFO  2017-09-15 23:01:28,285 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css  
+INFO  2017-09-15 23:01:28,292 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/contents.css was not modified
+INFO  2017-09-15 23:01:28,316 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.8266ms 304 text/css
+INFO  2017-09-15 23:01:28,323 [49   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css was not modified
+INFO  2017-09-15 23:01:28,338 [40   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css was not modified
+INFO  2017-09-15 23:01:28,346 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/plugins/tableselection/styles/tableselection.css was not modified
+INFO  2017-09-15 23:01:28,357 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 216.1964ms 304 text/css
+INFO  2017-09-15 23:01:28,397 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 315.8097ms 304 text/css
+INFO  2017-09-15 23:01:28,402 [49   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 315.3592ms 304 text/css
+INFO  2017-09-15 23:01:28,413 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 147.3621ms 304 text/css
+INFO  2017-09-15 23:01:28,430 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/ckeditor/skins/moono-lisa/icons.png?t=dee99e2  
+INFO  2017-09-15 23:01:28,435 [48   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/ckeditor/skins/moono-lisa/icons.png was not modified
+INFO  2017-09-15 23:01:28,440 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.5031ms 304 image/png
+INFO  2017-09-15 23:04:25,079 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 23:04:25,086 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:25,091 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 23:04:25,118 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:04:25,382 [40   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 23:04:25,527 [56   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 430.0701ms
+INFO  2017-09-15 23:04:25,689 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 23:04:25,695 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 452.1076ms 200 text/html; charset=utf-8
+INFO  2017-09-15 23:04:25,755 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:25,807 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/css/jquery.fileupload.css?v=2w6vtdNm9m9XUvYRBd_NthD3H31ilD5PiGxBv01jT1I  
+INFO  2017-09-15 23:04:25,816 [56   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/css/jquery.fileupload.css was not modified
+INFO  2017-09-15 23:04:26,113 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 112.772ms 304 text/css
+INFO  2017-09-15 23:04:26,274 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/js/jquery.iframe-transport.js?v=ukF1SZuKuWxrOuHYsIWvveF8zXDPjGZczpiPwQYRTwU  
+INFO  2017-09-15 23:04:26,287 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js?v=00MRscYhQWaTV0XNEoe6rerlo9KIjr0Tj0VIJEadrEQ  
+INFO  2017-09-15 23:04:26,298 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=v8w7Ee5TuZV_CsR7ejHUyTgU9Pca638bkMY_2i6dmLA  
+INFO  2017-09-15 23:04:26,371 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blueimp-file-upload/js/jquery.fileupload.js?v=Y8J5vfzLXyVHQT8pQhbXMvDpJdt8LEDc2E2AGKa7FXg  
+INFO  2017-09-15 23:04:26,420 [40   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js was not modified
+INFO  2017-09-15 23:04:26,432 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 23:04:26,454 [61   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/js/jquery.fileupload.js was not modified
+INFO  2017-09-15 23:04:26,465 [60   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Articles/createOrEditArticleInfo.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\view-resources\Views\Articles\createOrEditArticleInfo.js'
+INFO  2017-09-15 23:04:26,470 [52   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blueimp-file-upload/js/jquery.iframe-transport.js was not modified
+INFO  2017-09-15 23:04:26,507 [56   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:26,690 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 517.707ms 304 application/javascript
+INFO  2017-09-15 23:04:26,705 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 523.1057ms 200 application/javascript
+INFO  2017-09-15 23:04:26,714 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 467.1399ms 304 application/javascript
+INFO  2017-09-15 23:04:26,723 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 396.1412ms 304 application/javascript
+INFO  2017-09-15 23:04:26,742 [56   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:04:26,754 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 23:04:26,760 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 23:04:26,781 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1006.1789ms
+INFO  2017-09-15 23:04:26,793 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1207.9922ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 23:04:26,837 [56   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:04:26,844 [56   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 329.8409ms
+INFO  2017-09-15 23:04:26,863 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 593.1992ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:04:29,776 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/FileUpload/UploadImageFile multipart/form-data; boundary=----WebKitFormBoundaryFPllmGeqYB5L6op7 102640
+INFO  2017-09-15 23:04:29,785 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:29,825 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:04:32,944 [63   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-09-15 23:04:32,950 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 3156.6516ms
+INFO  2017-09-15 23:04:32,969 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3185.8931ms 200 application/json; charset=utf-8
+INFO  2017-09-15 23:04:54,177 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 23:04:54,190 [63   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:54,203 [63   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 23:04:54,267 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:04:54,395 [40   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 23:04:54,592 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 391.8161ms
+INFO  2017-09-15 23:04:54,645 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 424.1771ms 200 text/html; charset=utf-8
+INFO  2017-09-15 23:04:54,688 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 23:04:54,742 [40   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:54,916 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 23:04:55,061 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 23:04:55,090 [40   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 23:04:55,118 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=3nVr8X0wfq_Jm1Y7bRWkXM2Q9iBgEqon_WwTa5ogrwo  
+INFO  2017-09-15 23:04:55,189 [64   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:55,204 [63   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Articles/createOrEditArticleInfo.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\view-resources\Views\Articles\createOrEditArticleInfo.js'
+INFO  2017-09-15 23:04:55,301 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 350.4672ms
+INFO  2017-09-15 23:04:55,345 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 656.6955ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 23:04:55,390 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:04:55,390 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 435.0166ms 200 application/javascript
+INFO  2017-09-15 23:04:55,432 [64   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:04:55,450 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 238.6817ms
+INFO  2017-09-15 23:04:55,457 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 617.607ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:04:58,195 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/FileUpload/UploadImageFile multipart/form-data; boundary=----WebKitFormBoundarydkoITohd5bXhRsUn 102640
+INFO  2017-09-15 23:04:58,202 [64   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:04:58,257 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:04:58,313 [64   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-09-15 23:04:58,320 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 110.9969ms
+INFO  2017-09-15 23:04:58,343 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.5481ms 200 application/json; charset=utf-8
+INFO  2017-09-15 23:04:58,371 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Upload/image/%E5%89%91%E4%B8%8901.jpg  
+INFO  2017-09-15 23:04:58,380 [56   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/Upload/image/剑三01.jpg'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\Upload\image\剑三01.jpg'
+INFO  2017-09-15 23:04:58,422 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.3999ms 200 image/jpeg
+INFO  2017-09-15 23:07:14,278 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/ArticleInfoes/CreateOrEdit  
+INFO  2017-09-15 23:07:14,298 [40   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:07:14,306 [40   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-15 23:07:14,370 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:07:14,499 [71   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/ArticleInfoes/CreateOrEdit.cshtml.
+INFO  2017-09-15 23:07:14,596 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.ArticleInfoesController.CreateOrEdit (ABPBlog.Web.Mvc) in 289.6913ms
+INFO  2017-09-15 23:07:14,629 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 330.7563ms 200 text/html; charset=utf-8
+INFO  2017-09-15 23:07:14,637 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636411129567157210  
+INFO  2017-09-15 23:07:14,647 [63   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:07:14,862 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636411129567157210  
+INFO  2017-09-15 23:07:14,890 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Articles/createOrEditArticleInfo.js?v=iEophaGiSlk2HRpQNpcXQiXSFdF_ebC6pRBCAdhOHH4  
+INFO  2017-09-15 23:07:14,902 [40   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:07:14,909 [56   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Articles/createOrEditArticleInfo.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\view-resources\Views\Articles\createOrEditArticleInfo.js'
+INFO  2017-09-15 23:07:14,936 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-15 23:07:14,951 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.3699ms 200 application/javascript
+INFO  2017-09-15 23:07:14,958 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:07:14,963 [63   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 23:07:14,970 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 314.9791ms
+INFO  2017-09-15 23:07:14,982 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 339.9986ms 200 text/plain; charset=utf-8
+INFO  2017-09-15 23:07:15,009 [40   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:07:15,015 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 104.5841ms
+INFO  2017-09-15 23:07:15,022 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 174.2501ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-15 23:07:18,353 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/FileUpload/UploadImageFile multipart/form-data; boundary=----WebKitFormBoundaryLwZVdYnqIJkmdQNo 102640
+INFO  2017-09-15 23:07:18,381 [63   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:07:18,433 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) with arguments () - ModelState is Valid
+INFO  2017-09-15 23:07:18,515 [63   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-09-15 23:07:18,523 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Mvc.Controllers.FileUploadController.UploadImageFile (ABPBlog.Web.Mvc) in 133.8268ms
+INFO  2017-09-15 23:07:18,540 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 177.2171ms 200 application/json; charset=utf-8
+INFO  2017-09-15 23:07:18,551 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Upload/image/%E5%89%91%E4%B8%8901.jpg  
+INFO  2017-09-15 23:07:18,558 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/Upload/image/剑三01.jpg'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Mvc\wwwroot\Upload\image\剑三01.jpg'
+INFO  2017-09-15 23:07:18,601 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.0326ms 200 image/jpeg
+INFO  2017-09-15 23:07:35,313 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/api/services/app/ArticleInfo/CreateOrEditArticleInfo application/json 145
+INFO  2017-09-15 23:07:35,341 [40   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-15 23:07:35,430 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Articles.ArticleInfoAppService.CreateOrEditArticleInfo (ABPBlog.Application) with arguments (ABPBlog.Articles.Dto.CreateOrEditArticleInfoDto) - ModelState is Valid
+ERROR 2017-09-15 23:07:35,963 [63   ] Mvc.ExceptionHandling.AbpExceptionFilter - An error occurred while updating the entries. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: INSERT 语句与 FOREIGN KEY 约束"FK_ArticleInfoes_ArticleClassifies_ClassifyId"冲突。该冲突发生于数据库"BlogData"，表"dbo.ArticleClassifies", column 'Id'。
+语句已终止。
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.EntityFrameworkCore.AbpDbContext.<SaveChangesAsync>d__49.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\AbpDbContext.cs:line 215
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.<SaveChangesInDbContextAsync>d__20.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 163
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.<SaveChangesAsync>d__12.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 68
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ABPBlog.Articles.ArticleInfoAppService.<CreateArticleInfo>d__8.MoveNext() in E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Application\Articles\ArticleInfoAppService.cs:line 88
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() in D:\Github\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ABPBlog.Articles.ArticleInfoAppService.<CreateOrEditArticleInfo>d__2.MoveNext() in E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Application\Articles\ArticleInfoAppService.cs:line 35
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2017-09-15 23:07:35,998 [63   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-15 23:07:36,005 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Articles.ArticleInfoAppService.CreateOrEditArticleInfo (ABPBlog.Application) in 655.7346ms
+INFO  2017-09-15 23:07:36,012 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 695.8814ms 500 application/json; charset=utf-8

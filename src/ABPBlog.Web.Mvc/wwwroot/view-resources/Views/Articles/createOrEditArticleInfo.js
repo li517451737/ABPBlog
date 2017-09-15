@@ -1,4 +1,4 @@
-﻿(function ($) {
+﻿(function () {
     $(function () {
         'use strict';
         var _articleInfoService = abp.services.app.articleInfo;
@@ -7,7 +7,7 @@
             if (!_$form.valid()) {
                 return;
             }
-            for (instance in CKEDITOR.instances) {
+            for (let instance in CKEDITOR.instances) {
                 CKEDITOR.instances[instance].updateElement();
             }
             var articleInfo = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js
@@ -29,11 +29,12 @@
                 var jsonResult = response.result;
                 if (jsonResult.success) {
                     //var fileUrl = abp.appPath + 'AppAreaName/DemoUiComponents/GetFile?id=' + jsonResult.result.id + '&contentType=' + jsonResult.result.contentType;
-                    var uploadedFile = '<a href="' + jsonResult.url + '" target="_blank">' + app.localize('UploadedFile') + '</a><br/><br/>' + ' Free text: ' + jsonResult.result.defaultFileUploadTextInput;
-                    $("#CoverImg").val(jsonResult.url);
+                    var uploadedFile = '<a href="' + jsonResult.result.url + '" target="_blank">文件上传</a><br/><br/>' + ' Free text: ' + jsonResult.result.defaultFileUploadTextInput;
+                    $("#CoverImg").val(jsonResult.result.url);
+                    $("#ShowCoverImg").attr("src", jsonResult.result.url)
                     abp.libs.sweetAlert.config.info.html = true;
-                    abp.message.info(uploadedFile, app.localize('PostedData'));
-                    abp.notify.info(app.localize('SavedSuccessfully'));
+                    abp.message.info(uploadedFile, "上传完成");
+                    //abp.notify.info();
                 } else {
                     abp.message.error(jsonResult.error.message);
                 }
@@ -48,4 +49,4 @@
         }).prop('disabled', !$.support.fileInput)
             .parent().addClass($.support.fileInput ? undefined : 'disabled');
     })
-})($)
+})()
