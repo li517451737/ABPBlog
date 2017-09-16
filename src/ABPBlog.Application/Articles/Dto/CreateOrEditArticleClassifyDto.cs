@@ -7,7 +7,7 @@ using System.Text;
 namespace ABPBlog.Articles.Dto
 {
     [AutoMapTo(typeof(ArticleClassify))]
-    public class GetAllArticleClassifyDto : EntityDto
+    public class CreateOrEditArticleClassifyDto : NullableIdDto
     {
         public string ClassName { get; set; }
 
@@ -16,7 +16,11 @@ namespace ABPBlog.Articles.Dto
         /// </summary>
         public int Sort { get; set; }
 
-
         public DateTime CreationTime { get; set; }
+
+        public CreateOrEditArticleClassifyDto()
+        {
+            CreationTime = Abp.Timing.Clock.Now;
+        }
     }
 }
