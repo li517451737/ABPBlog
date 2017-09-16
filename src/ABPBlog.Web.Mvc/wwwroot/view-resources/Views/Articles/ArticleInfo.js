@@ -5,7 +5,8 @@
         var _$form = _$modal.find('form');
         var _$articleTable = $("#articleTable");
         _$articleTable.bootstrapTable({
-            url: "/ArticleInfoes/GetArticleInfoes",         //请求后台的URL（*）
+            //url: "/ArticleInfoes/GetArticleInfoes",         //请求后台的URL（*）
+            abpMethod: _articleService.getAllArticles,
             method: 'get',                      //请求方式（*）
             toolbar: '#toolBar',                //工具按钮用哪个容器
             striped: true,                      //是否显示行间隔色
@@ -32,40 +33,78 @@
             minimumCountColumns: 2,             //最少允许的列数
             clickToSelect: true,                //是否启用点击选中行
             //height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
-            uniqueId: "Id",                     //每一行的唯一标识，一般为主键列
+            uniqueId: "id",                     //每一行的唯一标识，一般为主键列
             cardView: false,                    //是否显示详细视图
             detailView: false,
+            clickToSelect: true,
             columns: [
                 {
-                    field:"Id",
-                    checkbox: true
-                },
-                {
-                    field: 'Title',
+                    field: 'title',
                     title: '标题'
                 },
                 {
-                    field: 'ClassifyId',
-                    title: '分类'
+                    field: 'articleClassify',
+                    title: '分类',
+                    formatter: function (data) {
+                        return data.className;
+                    }
                 },
                 {
-                    field: 'UpdateTime',
-                    title: '最后更新日期'
+                    field: 'intro',
+                    title: '简介',
+                    formatter: function (data) {
+                        return abp.utils.truncateString(data, 50);
+                    }
                 },
                 {
-                    field: 'CreationTime',
-                    title: '创建日期'
+                    field: 'lastModificationTime',
+                    title: '最后更新日期',
+                    formatter: function (data) {
+                        return moment(data).format("YYYY-MM-DD HH:mm:ss")
+                    }
                 },
                 {
-                    field: "Operator",
+                    field: 'creationTime',
+                    title: '创建日期',
+                    formatter: function (data) {
+                        return moment(data).format("YYYY-MM-DD HH:mm:ss")
+                    }
+                },
+                {
+                    field: "operator",
                     title: "操作",
                     align: "center",
                     formatter: function (value, row, index) {
-                        return '<a  class=" btn btn-default btn-sm">编辑</a>' +
-                            '<a class=" btn btn-warning btn-sm">删除</a>'
+                        return '<a name="edit-article" class="btn btn-default btn-sm" href="ArticleInfoes/CreateOrEdit?id=' + row.id + '">编辑</a>' +
+                            '<a class="btn btn-warning btn-sm delete-article" data-article-id="' + row.id + '">删除</a>'
                     }
                 }
-            ]
+            ],
+            onLoadSuccess: function () {
+                $(".delete-article").click(function () {
+                    var articleId = $(this).attr("data-article-id");
+                    deleteArticle(articleId);
+                })
+            }
+
         })
+
+        function refreshArticleList() {
+            _$articleTable.bootstrapTable('refresh');
+        };
+        function deleteArticle(id) {
+            abp.message.confirm(
+                "确认删除选中项？",
+                function (isConfirmed) {
+                    if (isConfirmed) {
+                        _articleService.deleteArticleInfo({
+                            id: id
+                        }).done(function () {
+                            refreshArticleList();
+                        });
+                    }
+                }
+            );
+        };
     })
 })()

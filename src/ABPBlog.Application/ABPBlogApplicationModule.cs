@@ -14,6 +14,7 @@ namespace ABPBlog
         public override void PreInitialize()
         {
             Configuration.Authorization.Providers.Add<ABPBlogAuthorizationProvider>();
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(AppCustomDtoMapper.CreateMappings);
         }
 
         public override void Initialize()

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ABPBlog.Web.Models.Articles
 {
-    [AutoMapTo(typeof(CreateOrEditArticleInfoDto))]
+    [AutoMapFrom(typeof(CreateOrEditArticleInfoDto))]
     public class CreateOrEditArticleInfoViewModel : CreateOrEditArticleInfoDto
     {
         public bool IsEdit

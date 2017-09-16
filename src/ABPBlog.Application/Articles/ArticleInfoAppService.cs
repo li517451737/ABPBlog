@@ -43,9 +43,10 @@ namespace ABPBlog.Articles
                 await _repository.DeleteAsync(articleInfo);
         }
         
-        public async Task<ListResultDto<GetAllArticleInfoDto>> GetAllArticles(GetArticleInfoDto input)
+        public async Task<PagedListDto<ArticleInfoDto>> GetAllArticles(GetArticleInfoInput input)
         {
             var queryable = _repository.GetAll().Include(i=>i.ArticleClassify);
+            int totalCount = await queryable.CountAsync();
             if (input != null)
             {
                 queryable.WhereIf(input.ClassifyId.HasValue, i => i.ClassifyId == input.ClassifyId.Value)
@@ -53,14 +54,12 @@ namespace ABPBlog.Articles
                     .OrderByDescending(i=>i.UpdateTime).Skip(input.Offset).Take(input.Limit);
             }
             var articleInfoes = await queryable.ToListAsync();
-            return new ListResultDto<GetAllArticleInfoDto>(ObjectMapper.Map<List<GetAllArticleInfoDto>>(articleInfoes));
+            return new PagedListDto<ArticleInfoDto>
+            {
+                Items = ObjectMapper.Map<List<ArticleInfoDto>>(articleInfoes),
+                TotalCount = totalCount
+            };
         }
-
-        public async Task<int> GetArticlesCountAsync()
-        {
-            return await _repository.CountAsync();
-        }
-
         public async Task<CreateOrEditArticleInfoDto> GetArticleInfoForEdit(NullableIdDto input)
         {
             CreateOrEditArticleInfoDto articleInfo = new CreateOrEditArticleInfoDto();

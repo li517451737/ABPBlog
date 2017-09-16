@@ -11,15 +11,13 @@ namespace ABPBlog.Articles
     public interface IArticleClassifyAppService : IApplicationService
     {
 
-        Task<ListResultDto<GetAllArticleInfoDto>> GetAllArticleClassifies();
+        Task<ListResultDto<ArticleClassifyDto>> GetAllArticleClassifies();
 
         Task CreateOrEditArticleClassify(CreateOrEditArticleClassifyDto input);
 
         Task<CreateOrEditArticleInfoDto> GetArticleClassifyForEdit(NullableIdDto input);
 
         Task DeleteArticleClassify(EntityDto input);
-
-        Task<int> GetArticlesCountAsync();
 
     }
 }

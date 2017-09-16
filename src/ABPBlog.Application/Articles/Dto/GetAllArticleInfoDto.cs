@@ -7,8 +7,10 @@ using System.Text;
 namespace ABPBlog.Articles.Dto
 {
     [AutoMapTo(typeof(ArticleInfo))]
-    public class GetAllArticleInfoDto : EntityDto<int>
+    public class ArticleInfoDto
     {
+        public int Id { get; set; }
+
         /// <summary>
         /// 标题
         /// </summary>
@@ -41,7 +43,7 @@ namespace ABPBlog.Articles.Dto
         /// <summary>
         /// 更新日期
         /// </summary>
-        public DateTime? UpdateTime { get; set; }
+        public DateTime? LastModificationTime { get; set; }
         /// <summary>
         /// 创建日期
         /// </summary>

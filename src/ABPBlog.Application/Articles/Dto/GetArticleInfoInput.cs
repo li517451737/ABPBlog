@@ -8,7 +8,7 @@ namespace ABPBlog.Articles.Dto
     /// <summary>
     /// 查询条件
     /// </summary>
-    public class GetArticleInfoDto
+    public class GetArticleInfoInput
     {
         /// <summary>
         /// 关键字

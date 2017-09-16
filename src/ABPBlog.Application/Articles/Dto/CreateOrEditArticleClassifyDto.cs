@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ABPBlog.Articles.Dto
 {
-    [AutoMapTo(typeof(ArticleClassify))]
+    [AutoMap(typeof(ArticleClassify))]
     public class CreateOrEditArticleClassifyDto : NullableIdDto
     {
         public string ClassName { get; set; }

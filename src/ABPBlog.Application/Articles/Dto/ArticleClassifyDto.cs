@@ -6,8 +6,8 @@ using System.Text;
 
 namespace ABPBlog.Articles.Dto
 {
-    [AutoMapTo(typeof(ArticleClassify))]
-    public class GetAllArticleClassifyDto : EntityDto
+    [AutoMap(typeof(ArticleClassify))]
+    public class ArticleClassifyDto : EntityDto
     {
         public string ClassName { get; set; }
 

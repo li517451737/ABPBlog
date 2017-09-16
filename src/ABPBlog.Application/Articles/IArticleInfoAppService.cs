@@ -10,14 +10,12 @@ namespace ABPBlog.Articles
 {
     public interface IArticleInfoAppService : IApplicationService
     {
-        Task<ListResultDto<GetAllArticleInfoDto>> GetAllArticles(GetArticleInfoDto input);
+        Task<PagedListDto<ArticleInfoDto>> GetAllArticles(GetArticleInfoInput input);
 
         Task CreateOrEditArticleInfo(CreateOrEditArticleInfoDto input);
 
         Task<CreateOrEditArticleInfoDto> GetArticleInfoForEdit(NullableIdDto input);
 
         Task DeleteArticleInfo(EntityDto input);
-
-        Task<int> GetArticlesCountAsync();
     }
 }

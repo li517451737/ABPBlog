@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -22,6 +23,7 @@ namespace ABPBlog.Articles
         /// <summary>
         /// 文章导航
         /// </summary>
+        [JsonIgnore]
         public virtual ICollection<ArticleInfo> ArticleInfoes { get; set; }
     }
 }

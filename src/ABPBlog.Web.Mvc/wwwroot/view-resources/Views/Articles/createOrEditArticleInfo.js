@@ -13,7 +13,7 @@
             var articleInfo = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js
             abp.ui.setBusy(_$form);
             _articleInfoService.createOrEditArticleInfo(articleInfo).done(function () {
-                location.href = "/ArticleInfoes/Index";
+                location.href = abp.appPath + "ArticleInfoes/Index";
             }).always(function () {
                 abp.ui.clearBusy(_$form);
             });
@@ -28,24 +28,22 @@
             done: function (e, response) {
                 var jsonResult = response.result;
                 if (jsonResult.success) {
-                    //var fileUrl = abp.appPath + 'AppAreaName/DemoUiComponents/GetFile?id=' + jsonResult.result.id + '&contentType=' + jsonResult.result.contentType;
-                    var uploadedFile = '<a href="' + jsonResult.result.url + '" target="_blank">文件上传</a><br/><br/>' + ' Free text: ' + jsonResult.result.defaultFileUploadTextInput;
+                    var uploadedFile = '<a href="' + jsonResult.result.url + '" target="_blank">文件上传</a><br/><br/>';
                     $("#CoverImg").val(jsonResult.result.url);
                     $("#ShowCoverImg").attr("src", jsonResult.result.url)
                     abp.libs.sweetAlert.config.info.html = true;
-                    //abp.message.info(uploadedFile, "上传完成");
                     abp.notify.info(uploadedFile,"上传完成");
                 } else {
                     abp.message.error(jsonResult.error.message);
                 }
             },
-            progressall: function (e, data) {
-                var progress = parseInt(data.loaded / data.total * 100, 10);
-                $('#progress .progress-bar').css(
-                    'width',
-                    progress + '%'
-                );
-            }
+            //progressall: function (e, data) {
+            //    var progress = parseInt(data.loaded / data.total * 100, 10);
+            //    $('#progress .progress-bar').css(
+            //        'width',
+            //        progress + '%'
+            //    );
+            //}
         }).prop('disabled', !$.support.fileInput)
             .parent().addClass($.support.fileInput ? undefined : 'disabled');
     })

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ABPBlog.Articles.Dto
 {
-    [AutoMapTo(typeof(ArticleInfo))]
+    [AutoMap(typeof(ArticleInfo))]
     public class CreateOrEditArticleInfoDto
     {
         public int? Id { get; set; }
