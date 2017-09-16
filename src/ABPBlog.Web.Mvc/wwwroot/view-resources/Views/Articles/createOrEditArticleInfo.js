@@ -19,7 +19,7 @@
             });
         });
 
-        // Change this to the location of your server-side upload handler:
+        //server-side upload handler:
         var url = abp.appPath + 'FileUpload/UploadImageFile';
         $('#fileupload').fileupload({
             url: url,
@@ -33,8 +33,8 @@
                     $("#CoverImg").val(jsonResult.result.url);
                     $("#ShowCoverImg").attr("src", jsonResult.result.url)
                     abp.libs.sweetAlert.config.info.html = true;
-                    abp.message.info(uploadedFile, "上传完成");
-                    //abp.notify.info();
+                    //abp.message.info(uploadedFile, "上传完成");
+                    abp.notify.info(uploadedFile,"上传完成");
                 } else {
                     abp.message.error(jsonResult.error.message);
                 }
