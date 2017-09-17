@@ -63,7 +63,7 @@ namespace ABPBlog.Web.Startup
                             new MenuItemDefinition(
                                 PageNames.ArticleClassify,
                                 L("ABPBlog_Pages_ArticlesClassify"),
-                                url: "ArticleClassify",
+                                url: "ArticleClassifies",
                                 icon: "fa fa-bars",
                                 requiredPermissionName: PermissionNames.ABPBlog_Pages_ArticlesClassify
                                 )

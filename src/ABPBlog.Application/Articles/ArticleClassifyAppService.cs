@@ -50,10 +50,10 @@ namespace ABPBlog.Articles
             return new ListResultDto<ArticleClassifyDto>(ObjectMapper.Map<List<ArticleClassifyDto>>(queryable));
         }
 
-        public async Task<CreateOrEditArticleInfoDto> GetArticleClassifyForEdit(NullableIdDto input)
+        public async Task<CreateOrEditArticleClassifyDto> GetArticleClassifyForEdit(NullableIdDto input)
         {
 
-            CreateOrEditArticleInfoDto classifyInfo = new CreateOrEditArticleInfoDto();
+            CreateOrEditArticleClassifyDto classifyInfo = new CreateOrEditArticleClassifyDto();
             if (input.Id.HasValue)
             {
                 var info = await _repository.FirstOrDefaultAsync(input.Id.Value);
@@ -76,6 +76,7 @@ namespace ABPBlog.Articles
             if (_repository.GetAll().Any(i => i.ClassName.Equals(input.ClassName)))
                 throw new UserFriendlyException("分类名称已存在");
             var classifyInfo = ObjectMapper.Map<ArticleClassify>(input);
+            classifyInfo.CreationTime = Abp.Timing.Clock.Now;
             await _repository.InsertAsync(classifyInfo);
             await CurrentUnitOfWork.SaveChangesAsync();
         }

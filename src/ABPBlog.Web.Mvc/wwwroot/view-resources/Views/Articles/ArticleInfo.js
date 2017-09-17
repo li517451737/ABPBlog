@@ -75,7 +75,7 @@
                     title: "操作",
                     align: "center",
                     formatter: function (value, row, index) {
-                        return '<a name="edit-article" class="btn btn-default btn-sm" href="ArticleInfoes/CreateOrEdit?id=' + row.id + '">编辑</a>' +
+                        return '<a name="edit-article" class="btn btn-default btn-sm" href="/ArticleInfoes/CreateOrEdit?id=' + row.id + '">编辑</a>' +
                             '<a class="btn btn-warning btn-sm delete-article" data-article-id="' + row.id + '">删除</a>'
                     }
                 }

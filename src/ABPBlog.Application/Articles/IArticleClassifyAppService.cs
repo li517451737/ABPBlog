@@ -15,7 +15,7 @@ namespace ABPBlog.Articles
 
         Task CreateOrEditArticleClassify(CreateOrEditArticleClassifyDto input);
 
-        Task<CreateOrEditArticleInfoDto> GetArticleClassifyForEdit(NullableIdDto input);
+        Task<CreateOrEditArticleClassifyDto> GetArticleClassifyForEdit(NullableIdDto input);
 
         Task DeleteArticleClassify(EntityDto input);
 

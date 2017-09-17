@@ -28,6 +28,12 @@
     <text name="Content" value="内容" />
     <text name="SourceUrl" value="来源地址" />
     <text name="Memo" value="备注" />
+    <text name="CLassName" value="分类名称" />
+    <text name="Sort" value="序号" />
+    <text name="CreateNewArticleClassify" value="创建文章分类" />
+    <text name="Cancel" value="取消" />
+    <text name="Edit" value="编辑" />
+    <text name="Delete" value="删除" />
 
 
     <text name="ABPBlog_Pages_ArticlesManager" value="文章管理"></text>

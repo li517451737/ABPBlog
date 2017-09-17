@@ -1,0 +1,104 @@
+﻿@using ABPBlog.Web.Startup
+@model IReadOnlyList<ABPBlog.Web.Models.Articles.ArticleClassifyListViewModel>
+@{
+    ViewBag.CurrentPageName = PageNames.ArticleClassify; //The menu item will be active for this page.
+}
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Articles/ArticleClassify.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/Articles/ArticleClassify.min.js" asp-append-version="true"></script>
+    </environment>
+}
+<section class="content-header">
+    <h1>
+        文章分类
+        <small>管理文章分类</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i>@L("HomePage")</a></li>
+        <li><a asp-action="Index" class="active">文章分类</a></li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ClassifyCreateModal">
+                    <i class="fa fa-plus">&nbsp;添加</i>
+                </button>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-body">
+                    <table id="roleTable" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>分类编码</th>
+                                <th>分类名称</th>
+                                <th>创建日期</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var classify in Model)
+                            {
+                                <tr>
+                                    <td>@classify.Id</td>
+                                    <td>@classify.ClassName</td>
+                                    <td>@classify.CreationTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-success edit-classify" href="#" data-classify-id="@classify.Id" data-toggle="modal" data-target="#ClassifyEditModal">@L("Edit")</a>
+                                        <a class="btn btn-sm btn-warning delete-classify" href="#" data-classify-id="@classify.Id" data-classify-name="@classify.ClassName">@L("Delete")</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+<div class="modal fade" id="ClassifyCreateModal" tabindex="-1" role="dialog" aria-labelledby="ClassifyCreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreateNewArticleClassify")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="classifyEditForm" role="form" novalidate class="form-validation">
+                    <div class="form-group">
+                        <label for="CLassName">@L("CLassName")</label>
+                        <input id="CLassName" text" name="CLassName" required maxlength="50" minlength="2" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="Sort">@L("Sort")</label>
+                        <input id="Sort" type="number" name="Sort" required class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ClassifyEditModal" tabindex="-1" role="dialog" aria-labelledby="RoleEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>

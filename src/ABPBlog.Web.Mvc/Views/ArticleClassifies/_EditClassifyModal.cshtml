@@ -1,0 +1,24 @@
+﻿@using ABPBlog.Web.Models.Common.Modals
+@model ABPBlog.Web.Models.Articles.EditArticleCLassifyViewModel
+@{
+    Layout = null;
+}
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditArticleClassify")))
+
+<div class="modal-body">
+    <form name="classifyEditForm" role="form" novalidate class="form-validation">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="form-group">
+            <label for="CLassName">@L("CLassName")</label>
+            <input id="CLassName" text" name="CLassName" value="@Model.ClassName"  required maxlength="50" minlength="2" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="Sort">@L("Sort")</label>
+            <input id="Sort" type="number" name="Sort" value="@Model.Sort" required class="form-control">
+        </div>
+    </form>
+</div>
+
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Views/Articles/EditArticleClassify.js" asp-append-version="true"></script>
