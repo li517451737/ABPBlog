@@ -8,6 +8,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// For complete reference see:
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
 
+    config.filebrowserImageUploadUrl  = "/FileUpload/CkUploadImage";
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
 		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
@@ -34,5 +35,6 @@ CKEDITOR.editorConfig = function( config ) {
 	config.format_tags = 'p;h1;h2;h3;pre';
 
 	// Simplify the dialog windows.
-	config.removeDialogTabs = 'image:advanced;link:advanced';
+    config.removeDialogTabs = 'image:advanced;link:advanced';
+
 };
