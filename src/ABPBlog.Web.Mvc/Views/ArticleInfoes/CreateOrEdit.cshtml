@@ -39,13 +39,9 @@
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="col-sm-12">
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            @Html.DropDownList("ClassifyId", ViewBag.ClassifyList as SelectList, new { @class = "form-control edit" })
-                            <label for="ClassifyId" class="form-label">@L("Classify")</label>
-                        </div>
-                    </div>
+                <div class="col-sm-12 input-field">
+                    <label for="ClassifyId" class="form-label">@L("Classify")</label>
+                    @Html.DropDownList("ClassifyId", ViewBag.ClassifyList as SelectList)
                 </div>
             </div>
             <div class="row clearfix">

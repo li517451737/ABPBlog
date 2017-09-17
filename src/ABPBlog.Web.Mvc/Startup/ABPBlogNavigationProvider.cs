@@ -17,7 +17,7 @@ namespace ABPBlog.Web.Startup
                         PageNames.Home,
                         L("HomePage"),
                         url: "",
-                        icon: "home",
+                        icon: "fa fa-home",
                         requiresAuthentication: true
                     )
                 ).AddItem(
@@ -25,7 +25,7 @@ namespace ABPBlog.Web.Startup
                         PageNames.Tenants,
                         L("Tenants"),
                         url: "Tenants",
-                        icon: "business",
+                        icon: "fa fa-cubes",
                         requiredPermissionName: PermissionNames.Pages_Tenants
                     )
                 ).AddItem(
@@ -33,7 +33,7 @@ namespace ABPBlog.Web.Startup
                         PageNames.Users,
                         L("Users"),
                         url: "Users",
-                        icon: "people",
+                        icon: "fa fa-users",
                         requiredPermissionName: PermissionNames.Pages_Users
                     )
                 ).AddItem(
@@ -41,7 +41,7 @@ namespace ABPBlog.Web.Startup
                         PageNames.Roles,
                         L("Roles"),
                         url: "Roles",
-                        icon: "local_offer",
+                        icon: "fa fa-user-o",
                         requiredPermissionName: PermissionNames.Pages_Roles
                     )
                 ).AddItem(
@@ -49,14 +49,14 @@ namespace ABPBlog.Web.Startup
                         PageNames.Articles,
                         L("ABPBlog_Pages_ArticlesManager"),
                         url: "",
-                        icon: "home",
+                        icon: "fa fa-file",
                         requiredPermissionName: PermissionNames.ABPBlog_Pages_Articles
                         ).AddItem(
                             new MenuItemDefinition(
                                 PageNames.ArticleInfoes,
                                 L("ABPBlog_Pages_Articles"),
                                 url: "ArticleInfoes",
-                                icon: "local_offer",
+                                icon: "fa fa-book",
                                 requiredPermissionName: PermissionNames.ABPBlog_Pages_Articles
                                 )
                         ).AddItem(
@@ -64,7 +64,7 @@ namespace ABPBlog.Web.Startup
                                 PageNames.ArticleClassify,
                                 L("ABPBlog_Pages_ArticlesClassify"),
                                 url: "ArticleClassify",
-                                icon: "local_offer",
+                                icon: "fa fa-bars",
                                 requiredPermissionName: PermissionNames.ABPBlog_Pages_ArticlesClassify
                                 )
                         )
@@ -74,7 +74,7 @@ namespace ABPBlog.Web.Startup
                         PageNames.About,
                         L("About"),
                         url: "About",
-                        icon: "info"
+                        icon: "fa fa-info-circle"
                     )
                 );
         }

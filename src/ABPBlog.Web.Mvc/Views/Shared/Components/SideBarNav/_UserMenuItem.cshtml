@@ -2,21 +2,24 @@
 @using ABPBlog.Web.Views.Shared.Components.SideBarNav
 @model UserMenuItemViewModel
 
-<li class="@(Model.MenuItemIndex == 0 && Model.RootLevel ? "start" : "") @(Model.MenuItem.IsMenuActive(Model.CurrentPageName) ? "active" : "")">
+<li class="@(Model.MenuItem.Items.IsNullOrEmpty()?"":"treeview") @(Model.MenuItem.IsMenuActive(Model.CurrentPageName) ? "active" : "")">
     @if (Model.MenuItem.Items.IsNullOrEmpty())
             {
         <a href="@Model.MenuItem.CalculateUrl(ApplicationPath)">
-            <i class="material-icons">@Model.MenuItem.Icon</i>
+            <i class="@Model.MenuItem.Icon"></i>
             <span>@Model.MenuItem.DisplayName</span>
         </a>
     }
     else
     {
-        <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">@Model.MenuItem.Icon</i>
+        <a href="javascript:void(0);">
+            <i class="@Model.MenuItem.Icon"></i>
             <span>@Model.MenuItem.DisplayName</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
         </a>
-        <ul class="ml-menu">
+        <ul class="treeview-menu">
             @for (var i = 0; i < Model.MenuItem.Items.Count; i++)
             {
                 var childMenuItem = Model.MenuItem.Items[i];

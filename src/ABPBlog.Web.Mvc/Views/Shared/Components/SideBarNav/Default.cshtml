@@ -1,115 +1,21 @@
-﻿<!--
-@*@using Abp.Collections.Extensions
-@using ABPBlog.Web.Views
-@using ABPBlog.Web.Views.Shared.Components.SideBarNav
+﻿@using ABPBlog.Web.Views.Shared.Components.SideBarNav
 @model SideBarNavViewModel
 @{
-    var calculateMenuUrl = new Func<string, string>((url) =>
+
+}
+<ul class="sidebar-menu" data-widget="tree">
+    @for (var i = 0; i < Model.MainMenu.Items.Count; i++)
     {
-        if (string.IsNullOrEmpty(url))
-        {
-            return ApplicationPath;
-        }
-
-        if (UrlChecker.IsRooted(url))
-        {
-            return url;
-        }
-
-        return ApplicationPath + url;
-    });
-}
-<div class="menu">
-    <ul class="list">
-        @foreach (var menuItem in Model.MainMenu.Items)
-        {
-            <li class="@(Model.ActiveMenuItemName == menuItem.Name ? "active" : "")">
-                @if (menuItem.Items.IsNullOrEmpty())
-                {
-                    <a href="@calculateMenuUrl(menuItem.Url)">
-                        @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
-                        {
-                            <i class="material-icons">@menuItem.Icon</i>
-                        }
-                        <span>@menuItem.DisplayName</span>
-                    </a>
-                }
-                else
-                {
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
-                        {
-                            <i class="material-icons">@menuItem.Icon</i>
-                        }
-                        <span>@menuItem.DisplayName</span>
-                    </a>
-                    <ul class="ml-menu">
-                        @foreach (var subMenuItem in menuItem.Items)
-                        {
-                            <li class="@(Model.ActiveMenuItemName == subMenuItem.Name ? "active" : "")">
-                                @if (subMenuItem.Items.IsNullOrEmpty())
-                                {
-                                    <a href="@calculateMenuUrl(subMenuItem.Url)">
-                                        @if (!string.IsNullOrWhiteSpace(subMenuItem.Icon))
-                                        {
-                                            <i class="material-icons">@subMenuItem.Icon</i>
-                                        }
-                                        <span>@subMenuItem.DisplayName</span>
-                                    </a>
-                                }
-                                else
-                                {
-                                    <a href="javascript:void(0);" class="menu-toggle">
-                                        @if (!string.IsNullOrWhiteSpace(subMenuItem.Icon))
-                                        {
-                                            <i class="material-icons">@subMenuItem.Icon</i>
-                                        }
-                                        <span>@subMenuItem.DisplayName</span>
-                                    </a>
-                                    <ul class="ml-menu">
-                                        @foreach (var subSubMenuItem in subMenuItem.Items)
-                                        {
-                                            <li class="@(Model.ActiveMenuItemName == subSubMenuItem.Name ? "active" : "")">
-                                                <a href="@calculateMenuUrl(subSubMenuItem.Url)">
-                                                    @subSubMenuItem.DisplayName
-                                                </a>
-                                            </li>
-                                        }
-                                    </ul>
-                                }
-                            </li>
-                        }
-                    </ul>
-                }
-            </li>
-        }
-    </ul>
-</div>*@
-    -->
-@using ABPBlog.Web.Views.Shared.Components.SideBarNav
-@model SideBarNavViewModel
-@{
-
-}
-<div class="menu">
-    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
-    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
-    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
-    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
-    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
-    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-    <ul class="list">
-        @for (var i = 0; i < Model.MainMenu.Items.Count; i++)
-        {
-            var menuItem = Model.MainMenu.Items[i];
-            @Html.Partial("Components/SideBarNav/_UserMenuItem", new UserMenuItemViewModel
+        var menuItem = Model.MainMenu.Items[i];
+        @Html.Partial("Components/SideBarNav/_UserMenuItem", new UserMenuItemViewModel
        {
            MenuItem = menuItem,
            MenuItemIndex = i,
            RootLevel = true,
            CurrentPageName = Model.ActiveMenuItemName
        })
-        }
-    </ul>
-</div>
+    }
+</ul>
+
+
 	

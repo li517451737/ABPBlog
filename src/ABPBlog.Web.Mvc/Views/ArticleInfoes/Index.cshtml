@@ -3,7 +3,7 @@
     ViewBag.CurrentPageName = PageNames.ArticleInfoes;
 }
 @section scripts
-{
+    {
     <environment names="Development">
         <script src="~/view-resources/Views/Articles/ArticleInfo.js" asp-append-version="true"></script>
     </environment>
@@ -11,25 +11,22 @@
         <script src="~/view-resources/Views/Articles/ArticleInfo.min.js" asp-append-version="true"></script>
     </environment>
 }
-<div class="row clearfix">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
+<section class="content-header">
+    <h1>
+        @L("ABPBlog_Pages_Articles")
+        <small>管理文章信息</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i>@L("HomePage")</a></li>
+        <li>文章管理</li>
+        <li><a asp-action="Index" class="active">@L("ABPBlog_Pages_Articles")</a></li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
             <div class="header">
-                <h2>
-                    @L("ABPBlog_Pages_Articles")
-                </h2>
-                <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">more_vert</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>Refresh</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id="toolBar">
                 <div class="btn-group">
                     <a asp-action="CreateOrEdit" class="btn btn-primary blue">@L("ABPBlog_Pages_Articles_Create")</a>
                 </div>
@@ -37,6 +34,8 @@
             <div class="body table-responsive">
                 <table id="articleTable" class="table table-bordered table-striped table-hover"></table>
             </div>
+            <!-- /.col -->
         </div>
     </div>
-</div>
+    <!-- /.row -->
+</section>
