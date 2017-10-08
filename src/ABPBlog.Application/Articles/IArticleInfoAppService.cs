@@ -10,7 +10,7 @@ namespace ABPBlog.Articles
 {
     public interface IArticleInfoAppService : IApplicationService
     {
-        Task<PagedListDto<ArticleInfoDto>> GetAllArticles(GetArticleInfoInput input);
+        Task<PagedResultDto<ArticleInfoDto>> GetAllArticles(GetArticleInfoInput input);
 
         Task CreateOrEditArticleInfo(CreateOrEditArticleInfoDto input);
 

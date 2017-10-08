@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Abp.Application.Services.Dto;
+using System.Linq.Dynamic.Core;
 using ABPBlog.Articles.Dto;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
@@ -11,6 +12,7 @@ using Abp.Collections.Extensions;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Abp.Web.Models;
+using Abp.Linq.Extensions;
 
 namespace ABPBlog.Articles
 {
@@ -42,23 +44,22 @@ namespace ABPBlog.Articles
             if (articleInfo != null)
                 await _repository.DeleteAsync(articleInfo);
         }
-        
-        public async Task<PagedListDto<ArticleInfoDto>> GetAllArticles(GetArticleInfoInput input)
+        /// <summary>
+        /// 获取所有帖子列表
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<PagedResultDto<ArticleInfoDto>> GetAllArticles(GetArticleInfoInput input)
         {
             var queryable = _repository.GetAll().Include(i=>i.ArticleClassify);
-            int totalCount = await queryable.CountAsync();
             if (input != null)
             {
                 queryable.WhereIf(input.ClassifyId.HasValue, i => i.ClassifyId == input.ClassifyId.Value)
-                    .WhereIf(!string.IsNullOrEmpty(input.Keyword), o => o.Title.Contains(input.Keyword) || o.Intro.Contains(input.Keyword))
-                    .OrderByDescending(i=>i.UpdateTime).Skip(input.Offset).Take(input.Limit);
+                    .WhereIf(!string.IsNullOrEmpty(input.Keyword), o => o.Title.Contains(input.Keyword) || o.Intro.Contains(input.Keyword)).AsQueryable();
             }
-            var articleInfoes = await queryable.ToListAsync();
-            return new PagedListDto<ArticleInfoDto>
-            {
-                Items = ObjectMapper.Map<List<ArticleInfoDto>>(articleInfoes),
-                TotalCount = totalCount
-            };
+            var totalCount = await queryable.CountAsync();
+            var articleInfoes = await queryable.AsNoTracking().OrderBy(input.Sorting).PageBy(input).ToListAsync();
+            return new PagedResultDto<ArticleInfoDto>(totalCount, ObjectMapper.Map<List<ArticleInfoDto>>(articleInfoes));
         }
         public async Task<CreateOrEditArticleInfoDto> GetArticleInfoForEdit(NullableIdDto input)
         {

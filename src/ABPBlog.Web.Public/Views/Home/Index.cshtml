@@ -1,105 +1,127 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div class="row">
-    <div class="col m8">
-        <div class="article">
-            <h3>Page Heading</h3>
-            <div class="card medium">
-                <div class="card-image">
-                    <img src="~/images/js.jpg">
-                </div>
-                <div class="card-content">
-                    <p>
-                        ABP提供了功能系统使得这个更简单。我们可以 定义功能，然后检查某个功能是否对一个租户 开启了，最后将功能系统 集成到其他的ABP概念中（如权限和菜单）。
-                    </p>
-                </div>
-                <div class="card-action text-right">
-                    <a href="#"><i class=""></i>查看详情</a>
-                </div>
+
+@section styles{
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/swipebox/src/css/swipebox.css" asp-append-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/swipebox/src/css/swipebox.min.css" asp-append-version="true" />
+
+    </environment>
+
+}
+
+@section scripts{
+    <environment names="Development">
+        <script src="~/lib/swipebox/src/js/jquery.swipebox.js" asp-append-version="true"></script>
+        <script src="~/view-resources/home/index.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/swipebox/src/js/jquery.swipebox.min.js" asp-append-version="true"></script>
+
+    </environment>
+    <script type="text/javascript">
+        $(function () {
+            $(".swipebox").swipebox();
+        })
+    </script>
+}
+<div class="container">
+    <div class="portfolio-content">
+        <!-- portfolio -->
+        <div class="portfolio-section" id="portfolio">
+            <!-- head-section -->
+            <div class="head-section text-center">
+                <h2>简介</h2>
+                <span>哇哈哈哇哈哈哇哈哈 </span>
             </div>
-        </div>
-        <div class="article">
-            <h3>Page Heading</h3>
-            <div class="card medium">
-                <div class="card-image">
-                    <img src="~/images/js.jpg">
-                </div>
-                <div class="card-content">
-                    <p>
-                        I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.
-                    </p>
-                </div>
-                <div class="card-action">
-                    <a href="#"><i class=""></i>查看详情</a>
-                </div>
-            </div>
-        </div>
-        <div class="page">
-            <ul class="pagination">
-                <li class="disabled"><a href="#!"><i class="fa fa-chevron-left"></i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><i class="fa fa-ellipsis-h"></i></li>
-                <li class="waves-effect"><a href="#!"><i class="fa fa-chevron-right"></i></a></li>
+            <!-- /head-section -->
+            <ul id="filters" class="clearfix">
+                <li><span class="filter active" data-filter="app card icon logos web">全部</span></li>
+                <li><span class="filter" data-filter="app">亲子</span></li>
+                <li><span class="filter" data-filter="card">情侣</span></li>
+                <li><span class="filter" data-filter="icon">旅游</span></li>
+                <li><span class="filter" data-filter="logos">其他</span></li>
             </ul>
-        </div>
-    </div>
-    <div class="col m4">
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">Class</span>
-                <ul class="collection">
-                    <li class="collection-item"><a href="">ASP.NET MVC</a></li>
-                    <li class="collection-item"><a href="">ASP.NET Core</a></li>
-                    <li class="collection-item"><a href="">WINFORM</a></li>
-                    <li class="collection-item"><a href="">C#</a></li>
-                    <li class="collection-item"><a href="">Linux</a></li>
-                </ul>
+            <div id="portfoliolist">
+                <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="fa fa-search"> </span> </a>								</a>
+
+                    </div>
+                </div>
+                <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+
+                </div>
+                <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+                    </div>
+                </div>
+                <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper grid_box">
+                        <a href="~/images/js.jpg" class="swipebox" title="Image Title"> <img src="~/images/js.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">News</span>
-                <ul class="collection">
-                    <li class="collection-item"><a href="">ASP.NET MVC</a></li>
-                    <li class="collection-item"><a href="">ASP.NET Core</a></li>
-                    <li class="collection-item"><a href="">WINFORM</a></li>
-                    <li class="collection-item"><a href="">C#</a></li>
-                    <li class="collection-item"><a href="">Linux</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">Users</span>
-                <ul class="collection">
-                    <li class="collection-item avatar">
-                        <img src="~/images/user.png" alt="" class="circle">
-                        <span class="title">Title</span>
-                        <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="mdi-file-folder circle"></i>
-                        <span class="title">Title</span>
-                        <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="mdi-action-assessment circle green"></i>
-                        <span class="title">Title</span>
-                        <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="mdi-av-play-arrow circle red"></i>
-                        <span class="title">Title</span>
-                        <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
     </div>
 </div>

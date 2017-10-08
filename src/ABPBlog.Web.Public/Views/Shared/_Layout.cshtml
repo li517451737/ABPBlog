@@ -1,67 +1,152 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ABPBlog.Web.Public</title>
+    <title>Home</title>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="个人网站  照片展示" />
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/materialize/css/materialize.css" />
-        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" asp-append-version="true" />
+        <!-- Custom Theme files -->
+        <link href="~/css/style.css" rel="stylesheet" asp-append-version="true" />
     </environment>
-    <environment names="Staging,Production">
-        <link href="~/materialize/css/materialize.min.css" rel="stylesheet" asp-append-version="true" />
-        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
-    </environment>
-    <style>
-        .top {
-            margin-left: 10%;
-        }
-    </style>
+    <!-- View specific styles -->
     @RenderSection("styles", required: false)
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
 </head>
 <body>
-    <nav style="padding:0 2% 0 2%">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="hide-on-med-and-down top">
-                <li><a href="Home">主页</a></li>
-                <li><a href="images">相册</a></li>
-                <li><a href="About">关于</a></li>
-            </ul>
-            <ul class="hide-on-med-and-down right">
-                <li><a href="">登录</a></li>
-                <li><a href="">注册</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        @RenderBody()
-    </div>
-    <footer class="page-footer">
+    <!-- header-section-starts -->
+    <div class="header" id="header">
         <div class="container">
-            <div class="row">
-                <div class="col m12">
-                    <h5 class="white-text">友情链接</h5>
+            <div class="logo">
+                <a href="/">我们的记忆</a>
+            </div>
+            <div class="social-icons header-social-icons" style="display:inline-flex;">
+                <div>婚礼倒计时：</div>
+                <div class="countdown" style="display:inline-flex;">
+                    <div>
+                        <span class="days">0</span>
+                        <span class="">天</span>
+                    </div>
+                    <div>
+                        <span class="hours">0</span>
+                        <span class="">时</span>
+                    </div>
+                    <div>
+                        <span class="minutes">0</span>
+                        <span class="">分</span>
+                    </div>
+                    <div>
+                        <span class="seconds">0</span>
+                        <span class="">秒</span>
+                    </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+    <div class="navigation-strip">
+        <div class="container">
+            <div class="nav_content">
+                <div class="home">
+                    <a href="index.html"><img src="~/images/home1.png" /></a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search..';}" />
+                        <input type="submit" value="">
+                    </form>
+                </div>
+                <span class="menu"></span>
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="portfolio.html">相册</a></li>
+                        <li><a href="blog.html">日志</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="col-md-4 footer-grid">
+                    <h5>关于我们</h5>
+                    <p>
+                        litiansum
+                    </p>
+                </div>
+                <div class="col-md-4 footer-grid">
+
+                </div>
+                <div class="col-md-4 footer-grid">
+                    <h5>FOLLOW US</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in purus nibh. Donec ornare felis neque. Nullam tortor!
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="twitter"></i></a>
+                        <a href="#"><i class="facebook"></i></a>
+                        <a href="#"><i class="dribble"></i></a>
+                        <a href="#"><i class="rss"></i></a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyrights">
+                    <p>Copyright &copy; 2017.Personal .<a target="_blank" href="http://www.litianlove.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>						- More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
+                </div>
+                <div class="go-top">
+                    <a href="#header" class="scroll"><img src="images/go-to-top.png" alt="" /></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
     <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/materialize/js/materialize.js"></script>
-        @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
+        <script src="~/lib/downcount/jquery.downCount.js" asp-append-version="true"></script>
     </environment>
-    <environment names="Staging,Production">
-        <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
-        <script src="~/materialize/js/materialize.min.js" asp-append-version="true"></script>
-    </environment>
-    @RenderSection("Scripts", required: false)
+
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+            });
+            $("span.menu").click(function () {
+                $(".top-menu").slideToggle("slow", function () {
+                    // Animation complete.
+                });
+            });
+            $(".countdown").downCount({
+                date: '02/19/2018 12:00:00',
+                offset: +8
+            }, function () {
+                alert("婚礼正式开始!");
+            });
+        });
+
+    </script>
 </body>
 </html>
