@@ -16,6 +16,7 @@
 [Rr]elease/
 [Rr]eleases/
 x64/
+App_Data/Logs/
 x86/
 bld/
 [Bb]in/
