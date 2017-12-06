@@ -42,49 +42,38 @@
   {
     "outputFileName": "wwwroot/view-resources/Views/_Bundles/shared-layout.min.css",
     "inputFiles": [
-      "wwwroot/fonts/roboto/roboto.css",
-      "wwwroot/fonts/material-icons/materialicons.css",
       "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "wwwroot/lib/bootstrap-table/dist/bootstrap-table.css",
-      "wwwroot/lib/bootstrap-select/dist/css/bootstrap-select.css",
-      "wwwroot/lib/toastr/toastr.css",
-      "wwwroot/lib/sweetalert/dist/sweetalert.css",
-      "wwwroot/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css",
       "wwwroot/lib/font-awesome/css/font-awesome.css",
-      "wwwroot/lib/Waves/dist/waves.css",
-      "wwwroot/lib/animate.css/animate.css",
-      "wwwroot/css/materialize.css",
-      "wwwroot/css/style.css",
-      "wwwroot/css/themes/all-themes.css",
-      "wwwroot/view-resources/Views/Shared/_Layout.css"
+      "wwwroot/AdminLTE/dist/css/AdminLTE.css",
+      "wwwroot/AdminLTE/dist/css/skins/_all-skins.css",
+      "wwwroot/lib/bootstrap-select/dist/css/bootstrap-select.css",
+      "wwwroot/lib/bootstrap-table/dist/bootstrap-table.css",
+      "wwwroot/lib/toastr/toastr.css",
+      "wwwroot/lib/sweetalert/dist/sweetalert.css"
     ]
   },
   {
     "outputFileName": "wwwroot/view-resources/Views/_Bundles/shared-layout.min.js",
     "inputFiles": [
-      "wwwroot/lib/json2/json2.js",
       "wwwroot/lib/jquery/dist/jquery.js",
       "wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "wwwroot/lib/bootstrap-table/dist/bootstrap-table.js",
       "wwwroot/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.js",
-      "wwwroot/lib/moment/min/moment-with-locales.js",
-      "wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "wwwroot/lib/blockUI/jquery.blockUI.js",
+      "wwwroot/common/bootstrap-table/bootstrap-table-extends.js",
       "wwwroot/lib/toastr/toastr.js",
-      "wwwroot/lib/sweetalert/dist/sweetalert-dev.js",
-      "wwwroot/lib/spin.js/spin.js",
-      "wwwroot/lib/spin.js/jquery.spin.js",
       "wwwroot/lib/bootstrap-select/dist/js/bootstrap-select.js",
+      "wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "wwwroot/lib/jquery-sparkline/dist/jquery.sparkline.js",
+      "wwwroot/lib/moment/min/moment-with-locales.js",
       "wwwroot/lib/jquery-slimscroll/jquery.slimscroll.js",
-      "wwwroot/lib/Waves/dist/waves.js",
-      "wwwroot/lib/push.js/push.js",
+      "wwwroot/lib/sweetalert/dist/sweetalert-dev.js",
+      "wwwroot/AdminLTE/dist/js/adminlte.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/abp.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js",
-      "wwwroot/js/admin.js",
       "wwwroot/js/main.js",
       "wwwroot/view-resources/Views/Shared/_Layout.js"
     ]
@@ -101,7 +90,6 @@
       "wwwroot/lib/Flot/jquery.flot.pie.js",
       "wwwroot/lib/Flot/jquery.flot.categories.js",
       "wwwroot/lib/Flot/jquery.flot.time.js",
-      "wwwroot/lib/jquery-sparkline/dist/jquery.sparkline.js",
       "wwwroot/view-resources/Views/Home/Index.js"
     ]
   },
@@ -139,6 +127,18 @@
     "outputFileName": "wwwroot/view-resources/Views/Shared/Components/TenantChange/Default.min.js",
     "inputFiles": [
       "wwwroot/view-resources/Views/Shared/Components/TenantChange/Default.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Views/Articles/ArticleClassify.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Views/Articles/ArticleClassify.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Views/Articles/ArticleInfo.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Views/Articles/ArticleInfo.js"
     ]
   }
 ]
