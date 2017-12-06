@@ -1,6 +1,6 @@
 ﻿(function () {
+    'use strict';
     $(function () {
-        'use strict';
         var _articleInfoService = abp.services.app.articleInfo;
         var _$form = $('#createOrEditArticleForm');
         $("#SaveArticle").click(function () {
@@ -32,7 +32,7 @@
                     $("#CoverImg").val(jsonResult.result.url);
                     $("#ShowCoverImg").attr("src", jsonResult.result.url)
                     abp.libs.sweetAlert.config.info.html = true;
-                    abp.notify.info(uploadedFile,"上传完成");
+                    abp.notify.info(uploadedFile, "上传完成");
                 } else {
                     abp.message.error(jsonResult.error.message);
                 }

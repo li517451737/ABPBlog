@@ -675,3 +675,82 @@ DEBUG 2017-09-14 16:40:24,561 [2    ] Abp.AutoMapper.AbpAutoMapperModule       -
 INFO  2017-09-14 16:40:25,881 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/font-awesome/css/font-awesome.css  
 INFO  2017-09-14 16:40:26,043 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/font-awesome/css/font-awesome.css was not modified
 INFO  2017-09-14 16:40:26,055 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 189.7244ms 304 text/css
+DEBUG 2017-12-06 11:46:16,679 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-06 11:46:16,755 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-12-06 11:46:16,780 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.Web.Public.Startup.ABPBlogPublicWebModule, ABPBlog.Web.Public, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogWebCoreModule, ABPBlog.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogApplicationModule, ABPBlog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogCoreModule, ABPBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.EntityFrameworkCore.ABPBlogEntityFrameworkModule, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,790 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:16,795 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-12-06 11:46:16,959 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-06 11:46:16,959 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-06 11:46:16,959 [1    ] o.Configuration.LanguageManagementConfig - Converted ABPBlog (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-06 11:46:16,959 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-06 11:46:17,562 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ABPBlog.EntityFrameworkCore.ABPBlogDbContext, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-06 11:46:18,331 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-12-06 11:46:18,354 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-06 11:46:18,371 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-12-06 11:46:18,372 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ABPBlog
+DEBUG 2017-12-06 11:46:18,374 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-06 11:46:18,521 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-06 11:46:18,521 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-12-06 11:46:18,528 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.CreateUserDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.UserDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.CreateRoleDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.PermissionDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.RoleDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.TenantDto
+DEBUG 2017-12-06 11:46:18,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.ArticleClassifyDto
+DEBUG 2017-12-06 11:46:18,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleClassifyDto
+DEBUG 2017-12-06 11:46:18,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleInfoDto
+DEBUG 2017-12-06 11:46:18,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.ArticleInfoDto
+INFO  2017-12-06 11:46:21,855 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-06 11:46:23,194 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-06 11:46:27,596 [11   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-06 11:46:28,085 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 4956.3791ms
+INFO  2017-12-06 11:46:28,097 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6257.4416ms 200 text/html; charset=utf-8
+INFO  2017-12-06 11:46:28,156 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/font-awesome/css/font-awesome.css  
+INFO  2017-12-06 11:46:28,163 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2017-12-06 11:46:28,175 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/materialize/css/materialize.css  
+INFO  2017-12-06 11:46:28,176 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/materialize/css/materialize.css'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\materialize\css\materialize.css'
+INFO  2017-12-06 11:46:28,200 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.7426ms 200 text/css
+INFO  2017-12-06 11:46:28,216 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 41.2411ms 200 text/css
+INFO  2017-12-06 11:46:28,230 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/js.jpg  
+INFO  2017-12-06 11:46:28,240 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/js.jpg'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\js.jpg'
+INFO  2017-12-06 11:46:28,259 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.1065ms 200 image/jpeg
+INFO  2017-12-06 11:46:28,277 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/user.png  
+INFO  2017-12-06 11:46:28,278 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/jquery/dist/jquery.js  
+INFO  2017-12-06 11:46:28,280 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2017-12-06 11:46:28,280 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.5638ms 404 
+INFO  2017-12-06 11:46:28,287 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/materialize/js/materialize.js  
+INFO  2017-12-06 11:46:28,288 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/materialize/js/materialize.js'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\materialize\js\materialize.js'
+INFO  2017-12-06 11:46:28,299 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.2974ms 200 application/javascript
+INFO  2017-12-06 11:46:28,327 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.1362ms 200 application/javascript
+INFO  2017-12-06 11:46:28,409 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/materialize/fonts/roboto/Roboto-Light.woff2  
+INFO  2017-12-06 11:46:28,409 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+INFO  2017-12-06 11:46:28,410 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/materialize/fonts/roboto/Roboto-Light.woff2'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\materialize\fonts\roboto\Roboto-Light.woff2'
+INFO  2017-12-06 11:46:28,412 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2017-12-06 11:46:28,412 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/materialize/fonts/roboto/Roboto-Regular.woff2  
+INFO  2017-12-06 11:46:28,423 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/materialize/fonts/roboto/Roboto-Regular.woff2'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\materialize\fonts\roboto\Roboto-Regular.woff2'
+INFO  2017-12-06 11:46:28,432 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.4361ms 200 font/woff2
+INFO  2017-12-06 11:46:28,436 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23.6029ms 200 font/woff2
+INFO  2017-12-06 11:46:28,447 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.9721ms 200 font/woff2
+INFO  2017-12-06 11:46:28,897 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-06 11:46:28,899 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\WorkSapces\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-06 11:46:28,937 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.4221ms 200 image/x-icon
+INFO  2017-12-06 11:47:49,602 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/Admin  
+INFO  2017-12-06 11:47:49,604 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7061ms 404 

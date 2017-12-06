@@ -26,56 +26,56 @@
 <section>
     <div class="row">
         <div class="col-sm-12">
-          <div class="box box-success" style="padding:12px">
-              <form id="createOrEditArticleForm" role="form">
-                  @if (Model.IsEdit)
-                  {
-                      <input type="hidden" name="Id" value="@Model.Id.Value" />
-                  }
-                  <div class="form-group">
-                      <label for="rolename" class="form-label">@L("Title")</label>
-                      <input id="Title" class="form-control" type="text" name="Title" value="@Model?.Title" required maxlength="32" minlength="2">
-                  </div>
-                  <div class="form-group">
-                      <label for="ClassifyId" class="form-label">分类</label>
-                      @Html.DropDownList("ClassifyId", ViewBag.ClassifyList as SelectList,new { @class="form-control"})
-                  </div>
-                  <div class="form-group">
-                      <div style="padding-bottom:2px;">
-                          <img class="img-responsive" width="150" id="ShowCoverImg" src="@(string.IsNullOrEmpty(Model.CoverImg)?"/images/no-image.jpg":Model.CoverImg)" />
-                      </div>
-                      <span class="btn btn-success fileinput-button">
-                          <i class="fa fa-upload"></i>
-                          <span>
-                              选择封面.
-                          </span>
-                          <input id="fileupload" type="file" name="files" accept="image/*">
-                          <input type="hidden" id="CoverImg" name="CoverImg" value="@Model?.CoverImg" />
-                      </span>
+            <div class="box box-success" style="padding:12px">
+                <form id="createOrEditArticleForm" role="form">
+                    @if (Model.IsEdit)
+                    {
+                        <input type="hidden" name="Id" value="@Model.Id.Value" />
+                    }
+                    <div class="form-group">
+                        <label for="rolename" class="form-label">@L("Title")</label>
+                        <input id="Title" class="form-control" type="text" name="Title" value="@Model?.Title" required maxlength="32" minlength="2">
+                    </div>
+                    <div class="form-group">
+                        <label for="ClassifyId" class="form-label">分类</label>
+                        @Html.DropDownList("ClassifyId", ViewBag.ClassifyList as SelectList, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <div style="padding-bottom:2px;">
+                            <img class="img-responsive" width="150" id="ShowCoverImg" src="@(string.IsNullOrEmpty(Model.CoverImg)?"/images/no-image.jpg":Model.CoverImg)" />
+                        </div>
+                        <span class="btn btn-success fileinput-button">
+                            <i class="fa fa-upload"></i>
+                            <span>
+                                选择封面.
+                            </span>
+                            <input id="fileupload" type="file" name="files" accept="image/*">
+                            <input type="hidden" id="CoverImg" name="CoverImg" value="@Model?.CoverImg" />
+                        </span>
 
-                  </div>
-                  <div class="form-group form-float">
-                      <label for="Intro" class="form-label">@L("Intro")</label>
-                      <textarea class="form-control" id="Intro" type="text" name="Intro" value="@Model?.Intro" required maxlength="200">@Model?.Intro</textarea>
-                  </div>
-                  <div class="form-group form-float">
-                      <label for="Content" class="form-label">@L("Content")</label>
-                      <textarea id="Content" type="text" name="Content" class="ckeditor">@Model?.Content</textarea>
-                  </div>
-                  <div class="form-group form-float">
-                      <label for="SourceUrl" class="form-label">@L("SourceUrl")</label>
-                      <input id="SourceUrl" type="text" name="SourceUrl" value="@Model?.SourceUrl" class="form-control" />
-                  </div>
-                  <div class="form-group form-float">
-                      <label for="Memo" class="form-label">@L("Memo")</label>
-                      <input id="Memo" type="text" name="Memo" value="@Model?.Memo" class="form-control" />
-                  </div>
-                  <div class="form-group text-center">
-                      <a class="btn btn-warning" asp-action="Index"><i class="fa fa-reply"></i>&nbsp;@L("Return")</a>
-                      <button type="button" id="SaveArticle" class="btn blue btn-success"><i class="fa fa-save"></i><span>&nbsp;@L("Save")</span></button>
-                  </div>
-              </form>
-          </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <label for="Intro" class="form-label">@L("Intro")</label>
+                        <textarea class="form-control" id="Intro" type="text" name="Intro" value="@Model?.Intro" required maxlength="200">@Model?.Intro</textarea>
+                    </div>
+                    <div class="form-group form-float">
+                        <label for="Content" class="form-label">@L("Content")</label>
+                        <textarea id="Content" type="text" name="Content" class="ckeditor">@Model?.Content</textarea>
+                    </div>
+                    <div class="form-group form-float">
+                        <label for="SourceUrl" class="form-label">@L("SourceUrl")</label>
+                        <input id="SourceUrl" type="text" name="SourceUrl" value="@Model?.SourceUrl" class="form-control" />
+                    </div>
+                    <div class="form-group form-float">
+                        <label for="Memo" class="form-label">@L("Memo")</label>
+                        <input id="Memo" type="text" name="Memo" value="@Model?.Memo" class="form-control" />
+                    </div>
+                    <div class="form-group text-center">
+                        <a class="btn btn-warning" asp-action="Index"><i class="fa fa-reply"></i>&nbsp;@L("Return")</a>
+                        <button type="button" id="SaveArticle" class="btn blue btn-success"><i class="fa fa-save"></i><span>&nbsp;@L("Save")</span></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -95,6 +95,6 @@
         <script src="~/lib/blueimp-file-upload/js/jquery.fileupload.js" asp-append-version="true"></script>
         <script src="~/lib/ckeditor/ckeditor.js" asp-append-version="true"></script>
         <script src="~/lib/ckeditor/styles.js" asp-append-version="true"></script>
-        <script src="~/view-resources/Views/Articles/createOrEditArticleInfo.min.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Articles/createOrEditArticleInfo.js" asp-append-version="true"></script>
     </environment>
 }
