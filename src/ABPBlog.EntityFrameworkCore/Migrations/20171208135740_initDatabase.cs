@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ABPBlog.Migrations
 {
-    public partial class init : Migration
+    public partial class initDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

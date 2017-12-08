@@ -3,6 +3,7 @@ using ABPBlog.Articles;
 using ABPBlog.Authorization.Roles;
 using ABPBlog.Authorization.Users;
 using ABPBlog.MultiTenancy;
+using ABPBlog.Photos;
 using Microsoft.EntityFrameworkCore;
 
 namespace ABPBlog.EntityFrameworkCore
@@ -13,6 +14,10 @@ namespace ABPBlog.EntityFrameworkCore
         public DbSet<ArticleInfo> ArticleInfoes { get; set; }
 
         public DbSet<ArticleClassify> ArticleClassifies { get; set; }
+
+        public DbSet<Photo> Photos { get; set; }
+
+        public DbSet<PhotoAlbum> PhotoAlbums { get; set; }
 
         public ABPBlogDbContext(DbContextOptions<ABPBlogDbContext> options)
             : base(options)

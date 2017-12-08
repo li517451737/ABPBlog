@@ -15,8 +15,8 @@ using System;
 namespace ABPBlog.Migrations
 {
     [DbContext(typeof(ABPBlogDbContext))]
-    [Migration("20171207134340_init")]
-    partial class init
+    [Migration("20171208135740_initDatabase")]
+    partial class initDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
