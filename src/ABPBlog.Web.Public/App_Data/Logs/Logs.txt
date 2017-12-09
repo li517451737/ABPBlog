@@ -754,3 +754,324 @@ INFO  2017-12-06 11:46:28,899 [5    ] NetCore.StaticFiles.StaticFileMiddleware -
 INFO  2017-12-06 11:46:28,937 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.4221ms 200 image/x-icon
 INFO  2017-12-06 11:47:49,602 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/Admin  
 INFO  2017-12-06 11:47:49,604 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7061ms 404 
+DEBUG 2017-12-09 21:07:23,056 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-09 21:07:23,132 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-12-09 21:07:23,147 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.Web.Public.Startup.ABPBlogPublicWebModule, ABPBlog.Web.Public, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,151 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogWebCoreModule, ABPBlog.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,152 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogApplicationModule, ABPBlog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,153 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogCoreModule, ABPBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,154 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,154 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,154 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.EntityFrameworkCore.ABPBlogEntityFrameworkModule, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,159 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-12-09 21:07:23,215 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:07:23,216 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:07:23,216 [1    ] o.Configuration.LanguageManagementConfig - Converted ABPBlog (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:07:23,216 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:07:23,443 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ABPBlog.EntityFrameworkCore.ABPBlogDbContext, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:07:23,816 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-12-09 21:07:23,830 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-09 21:07:23,835 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-12-09 21:07:23,836 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ABPBlog
+DEBUG 2017-12-09 21:07:23,837 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-09 21:07:23,910 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-09 21:07:23,910 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-12-09 21:07:23,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.CreateUserDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.UserDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.CreateRoleDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.PermissionDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.RoleDto
+DEBUG 2017-12-09 21:07:23,915 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-12-09 21:07:23,916 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-12-09 21:07:23,916 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.TenantDto
+DEBUG 2017-12-09 21:07:23,916 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.ArticleClassifyDto
+DEBUG 2017-12-09 21:07:23,917 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleClassifyDto
+DEBUG 2017-12-09 21:07:23,917 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleInfoDto
+DEBUG 2017-12-09 21:07:23,917 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.ArticleInfoDto
+FATAL 2017-12-09 21:07:24,698 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Application startup exception
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: Option 'trusted_connection' not supported.
+   at MySql.Data.MySqlClient.MySqlConnectionStringOption.GetOptionForKey(String key) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 298
+   at MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String key, Object value) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnectionStringBuilder.cs:line 226
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql[TContext](DbContextOptionsBuilder`1 optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at ABPBlog.EntityFrameworkCore.ABPBlogDbContextConfigurer.Configure(DbContextOptionsBuilder`1 builder, String connectionString) in E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.EntityFrameworkCore\EntityFrameworkCore\ABPBlogDbContextConfigurer.cs:line 10
+   at ABPBlog.EntityFrameworkCore.ABPBlogEntityFrameworkModule.<>c.<PreInitialize>b__8_0(AbpDbContextConfiguration`1 options) in E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.EntityFrameworkCore\EntityFrameworkCore\ABPBlogEntityFrameworkModule.cs:line 31
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.CreateOptions[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 64
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.CreateOptionsForType(Type dbContextType, String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 51
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 43
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.<GetAllListAsync>d__16.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 103
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext() in D:\Github\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:line 120
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Localization.ApplicationLanguageManager.<GetLanguagesFromDatabaseAsync>d__17.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\Localization\ApplicationLanguageManager.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext() in D:\Github\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:line 120
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Runtime.Caching.CacheBase.<GetAsync>d__19.MoveNext() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Caching\CacheBase.cs:line 116
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Caching\CacheExtensions.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Localization.ApplicationLanguageManager.<GetLanguageDictionary>d__15.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\Localization\ApplicationLanguageManager.cs:line 174
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Localization.ApplicationLanguageManager.<GetLanguagesAsync>d__8.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\Localization\ApplicationLanguageManager.cs:line 57
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.Localization.ApplicationLanguageProvider.GetLanguages() in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\Localization\ApplicationLanguageProvider.cs:line 35
+   at Abp.AspNetCore.AbpApplicationBuilderExtensions.UseAbpRequestLocalization(IApplicationBuilder app, Action`1 optionsAction) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\AbpApplicationBuilderExtensions.cs:line 81
+   at ABPBlog.Web.Public.Startup.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\Startup\Startup.cs:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.ApplicationInsights.HostingStartup.ApplicationInsightsLoggerStartupFilter.<>c__DisplayClass0_1.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.ApplicationInsights.AspNetCore.ApplicationInsightsStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass3_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+INFO  2017-12-09 21:07:25,080 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:07:25,283 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 221.9994ms 500 text/html; charset=utf-8
+INFO  2017-12-09 21:07:25,665 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:07:25,764 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 97.2298ms 500 text/html; charset=utf-8
+DEBUG 2017-12-09 21:20:46,179 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-09 21:20:46,208 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-12-09 21:20:46,256 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.Web.Public.Startup.ABPBlogPublicWebModule, ABPBlog.Web.Public, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogWebCoreModule, ABPBlog.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogApplicationModule, ABPBlog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,266 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.ABPBlogCoreModule, ABPBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,269 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,271 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,278 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPBlog.EntityFrameworkCore.ABPBlogEntityFrameworkModule, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,282 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,287 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,308 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:46,316 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-12-09 21:20:46,437 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:20:46,437 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:20:46,437 [1    ] o.Configuration.LanguageManagementConfig - Converted ABPBlog (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:20:46,437 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-09 21:20:46,745 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ABPBlog.EntityFrameworkCore.ABPBlogDbContext, ABPBlog.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-09 21:20:47,391 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-12-09 21:20:47,418 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-09 21:20:47,427 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-12-09 21:20:47,428 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ABPBlog
+DEBUG 2017-12-09 21:20:47,429 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-09 21:20:47,546 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-09 21:20:47,547 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-12-09 21:20:47,553 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.CreateUserDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Users.Dto.UserDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.CreateRoleDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.PermissionDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Roles.Dto.RoleDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.MultiTenancy.Dto.TenantDto
+DEBUG 2017-12-09 21:20:47,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.ArticleClassifyDto
+DEBUG 2017-12-09 21:20:47,555 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleClassifyDto
+DEBUG 2017-12-09 21:20:47,555 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.CreateOrEditArticleInfoDto
+DEBUG 2017-12-09 21:20:47,556 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ABPBlog.Articles.Dto.ArticleInfoDto
+INFO  2017-12-09 21:20:51,140 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:20:52,580 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:20:56,399 [3    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:20:56,861 [3    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 4356.3886ms
+INFO  2017-12-09 21:20:56,888 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5753.3619ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:20:56,901 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/css/style.css?v=Ll-YSvpukWXe_g0Cd82jzoOvm-VRi1H9yvRqJfyAizc  
+INFO  2017-12-09 21:20:56,902 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2017-12-09 21:20:56,906 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/font-awesome/css/font-awesome.css?v=YIHlqxkiJtENTMuzIHC9EfZaB5RniGr7kF7juUQJUuc  
+INFO  2017-12-09 21:20:56,907 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\css\style.css'
+INFO  2017-12-09 21:20:56,907 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2017-12-09 21:20:56,909 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2017-12-09 21:20:56,916 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/swipebox/src/css/swipebox.css?v=zP_SG5-Dmep-CdRCEgIZAOrzdrSnx37ldiEHuKTxXkM  
+INFO  2017-12-09 21:20:56,919 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.4585ms 200 text/css
+INFO  2017-12-09 21:20:56,919 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.5665ms 200 text/css
+INFO  2017-12-09 21:20:56,921 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swipebox/src/css/swipebox.css'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\swipebox\src\css\swipebox.css'
+INFO  2017-12-09 21:20:56,922 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.4598ms 200 text/css
+INFO  2017-12-09 21:20:56,936 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.9851ms 200 text/css
+INFO  2017-12-09 21:20:56,950 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/jquery/dist/jquery.js?v=oYqpLeqZe9cetUDV-TFiBZHp3uJ-X4F5eLs4W6uSTSE  
+INFO  2017-12-09 21:20:56,951 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2017-12-09 21:20:56,956 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.0331ms 200 application/javascript
+INFO  2017-12-09 21:20:57,005 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2017-12-09 21:20:57,007 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2017-12-09 21:20:57,011 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.4059ms 200 application/javascript
+INFO  2017-12-09 21:20:57,026 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/downcount/jquery.downCount.js?v=T9P4cT5dD9u7iJb-Dm3VeSdgy9PH2UoKrY2GUAcTCWQ  
+INFO  2017-12-09 21:20:57,027 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/downcount/jquery.downCount.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\downcount\jquery.downCount.js'
+INFO  2017-12-09 21:20:57,027 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4855ms 200 application/javascript
+INFO  2017-12-09 21:20:57,034 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/swipebox/src/js/jquery.swipebox.js?v=wCw02g8_50cLxlbcDGhjER7IwvXTtkJcQ898f6qGzmg  
+INFO  2017-12-09 21:20:57,035 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swipebox/src/js/jquery.swipebox.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\swipebox\src\js\jquery.swipebox.js'
+INFO  2017-12-09 21:20:57,037 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.706ms 200 application/javascript
+INFO  2017-12-09 21:20:57,044 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/view-resources/home/index.js?v=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U  
+INFO  2017-12-09 21:20:57,045 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/home/index.js'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\view-resources\home\index.js'
+INFO  2017-12-09 21:20:57,049 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.56ms 200 application/javascript
+INFO  2017-12-09 21:20:57,055 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/home1.png  
+INFO  2017-12-09 21:20:57,057 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/home1.png'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\home1.png'
+INFO  2017-12-09 21:20:57,070 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.9875ms 200 image/png
+INFO  2017-12-09 21:20:57,087 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/js.jpg  
+INFO  2017-12-09 21:20:57,088 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/js.jpg'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\js.jpg'
+INFO  2017-12-09 21:20:57,116 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.9083ms 200 image/jpeg
+INFO  2017-12-09 21:20:57,155 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/go-to-top.png  
+INFO  2017-12-09 21:20:57,156 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/go-to-top.png'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\go-to-top.png'
+INFO  2017-12-09 21:20:57,173 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.5102ms 200 image/png
+INFO  2017-12-09 21:20:57,386 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/sprit-1.png  
+INFO  2017-12-09 21:20:57,388 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/sprit-1.png'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\sprit-1.png'
+INFO  2017-12-09 21:20:57,393 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.0496ms 200 image/png
+INFO  2017-12-09 21:20:57,393 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/content-bg.jpg  
+INFO  2017-12-09 21:20:57,398 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/content-bg.jpg'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\content-bg.jpg'
+INFO  2017-12-09 21:20:57,408 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+INFO  2017-12-09 21:20:57,410 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2017-12-09 21:20:57,410 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.8134ms 200 image/jpeg
+INFO  2017-12-09 21:20:57,410 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/plus.png  
+INFO  2017-12-09 21:20:57,412 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/plus.png'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\plus.png'
+INFO  2017-12-09 21:20:57,419 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.3216ms 200 font/woff2
+INFO  2017-12-09 21:20:57,427 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.4048ms 200 image/png
+INFO  2017-12-09 21:20:57,440 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/footer-top-bg.jpg  
+INFO  2017-12-09 21:20:57,442 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/footer-top-bg.jpg'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\footer-top-bg.jpg'
+INFO  2017-12-09 21:20:57,444 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/images/img-sprite.png  
+INFO  2017-12-09 21:20:57,447 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/img-sprite.png'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\images\img-sprite.png'
+INFO  2017-12-09 21:20:57,451 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.934ms 200 image/jpeg
+INFO  2017-12-09 21:20:57,451 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.8491ms 200 image/png
+INFO  2017-12-09 21:20:57,604 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:20:57,605 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:20:57,616 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.7053ms 200 image/x-icon
+INFO  2017-12-09 21:22:08,283 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:22:08,299 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:22:08,325 [20   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:22:08,603 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 304.9531ms
+INFO  2017-12-09 21:22:08,605 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 321.2559ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:22:08,852 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:22:08,854 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:22:08,855 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.5552ms 200 image/x-icon
+INFO  2017-12-09 21:22:29,136 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:22:29,140 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:22:29,367 [31   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:22:29,417 [31   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 277.788ms
+INFO  2017-12-09 21:22:29,418 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 281.7704ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:22:29,692 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:22:29,693 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:22:29,694 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.8934ms 200 image/x-icon
+INFO  2017-12-09 21:22:50,352 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:22:50,356 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:22:50,704 [34   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:22:50,763 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 407.2764ms
+INFO  2017-12-09 21:22:50,764 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 411.8761ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:22:51,015 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:22:51,016 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:22:51,017 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6667ms 200 image/x-icon
+INFO  2017-12-09 21:22:57,364 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/bootstrap/dist/css/bootstrap.css.map  
+INFO  2017-12-09 21:22:57,365 [29   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+INFO  2017-12-09 21:22:57,444 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 79.721ms 200 text/plain
+INFO  2017-12-09 21:23:27,023 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/swipebox/src/img/icons.png  
+INFO  2017-12-09 21:23:27,025 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swipebox/src/img/icons.png'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\swipebox\src\img\icons.png'
+INFO  2017-12-09 21:23:27,031 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/swipebox/src/img/icons.svg  
+INFO  2017-12-09 21:23:27,033 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swipebox/src/img/icons.svg'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\swipebox\src\img\icons.svg'
+INFO  2017-12-09 21:23:27,048 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/lib/swipebox/src/img/loader.gif  
+INFO  2017-12-09 21:23:27,053 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swipebox/src/img/loader.gif'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\lib\swipebox\src\img\loader.gif'
+INFO  2017-12-09 21:23:27,072 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.0453ms 200 image/png
+INFO  2017-12-09 21:23:27,075 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26.9963ms 200 image/gif
+INFO  2017-12-09 21:23:27,075 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.4607ms 200 image/svg+xml
+INFO  2017-12-09 21:24:27,753 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:24:27,764 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:24:27,965 [20   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:24:28,046 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 282.5883ms
+INFO  2017-12-09 21:24:28,046 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 292.7216ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:24:50,081 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:24:50,089 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:24:50,314 [20   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:24:50,391 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 302.4868ms
+INFO  2017-12-09 21:24:50,391 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 310.4505ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:24:58,050 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:24:58,062 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:24:58,281 [32   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:24:58,392 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 329.8206ms
+INFO  2017-12-09 21:24:58,392 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 342.3424ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:25:12,604 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/portfolio.html  
+INFO  2017-12-09 21:25:12,608 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.2007ms 404 
+INFO  2017-12-09 21:25:57,615 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:25:57,621 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:25:57,646 [32   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:25:57,825 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 204.372ms
+INFO  2017-12-09 21:25:57,826 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 210.3464ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:25:58,162 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:25:58,164 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:25:58,165 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.1554ms 200 image/x-icon
+INFO  2017-12-09 21:26:33,962 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:26:33,969 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:26:33,978 [41   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:26:34,152 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 183.6346ms
+INFO  2017-12-09 21:26:34,152 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 190.6696ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:26:34,476 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:26:34,478 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:26:34,479 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.3189ms 200 image/x-icon
+INFO  2017-12-09 21:26:43,761 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:26:43,772 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:26:43,785 [41   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:26:44,009 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 238.1282ms
+INFO  2017-12-09 21:26:44,010 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 249.4266ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:26:44,232 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:26:44,234 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:26:44,234 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9991ms 200 image/x-icon
+INFO  2017-12-09 21:26:54,176 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/blog.html  
+INFO  2017-12-09 21:26:54,179 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.9474ms 404 
+INFO  2017-12-09 21:28:38,015 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:28:38,019 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:28:38,030 [52   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:28:38,247 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 228.5376ms
+INFO  2017-12-09 21:28:38,248 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 232.4874ms 200 text/html; charset=utf-8
+INFO  2017-12-09 21:28:38,627 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/favicon.ico  
+INFO  2017-12-09 21:28:38,630 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\Documents\Visual Studio 2017\Projects\ABPBlog\src\ABPBlog.Web.Public\wwwroot\favicon.ico'
+INFO  2017-12-09 21:28:38,631 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.7823ms 200 image/x-icon
+INFO  2017-12-09 21:29:12,125 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/  
+INFO  2017-12-09 21:29:12,136 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-09 21:29:12,147 [55   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-12-09 21:29:12,453 [55   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ABPBlog.Web.Public.Controllers.HomeController.Index (ABPBlog.Web.Public) in 312.6168ms
+INFO  2017-12-09 21:29:12,454 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 328.5716ms 200 text/html; charset=utf-8
+INFO  2017-12-09 22:29:44,469 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:52178/contact.html  
+INFO  2017-12-09 22:29:44,481 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.1581ms 404 

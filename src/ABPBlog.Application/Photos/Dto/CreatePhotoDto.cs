@@ -1,22 +1,15 @@
-﻿using Abp.Domain.Entities.Auditing;
-using Newtonsoft.Json;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace ABPBlog.Photos
+namespace ABPBlog.Photos.Dto
 {
-    /// <summary>
-    /// 图片信息
-    /// </summary>
-    public class Photo : FullAuditedEntity<Guid>
+    [AutoMapTo(typeof(Photo))]
+    public class CreateOrEditPhotoDto : NullableIdDto<Guid>
     {
-        /// <summary>
-        /// 相册编码
-        /// </summary>
-        public Guid AlbumId { get; set; }
         /// <summary>
         /// 标题
         /// </summary>
@@ -37,12 +30,5 @@ namespace ABPBlog.Photos
         [Required]
         [MaxLength(255)]
         public string ThumbnailUrl { get; set; }
-
-        /// <summary>
-        /// 相册
-        /// </summary>
-        [JsonIgnore]
-        [ForeignKey("AlbumId")]
-        public virtual PhotoAlbum PhotoAlbum { get; set; }
     }
 }

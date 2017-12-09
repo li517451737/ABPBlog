@@ -15,9 +15,10 @@ using System;
 namespace ABPBlog.Migrations
 {
     [DbContext(typeof(ABPBlogDbContext))]
-    partial class ABPBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171209150439_updatePhotos")]
+    partial class updatePhotos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
